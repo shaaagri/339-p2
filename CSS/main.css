@@ -1,7 +1,19 @@
+a{            
+  font-weight:bold;
+  color:blue;
+  text-decoration-line:none ;     /* <!-- citations for the removed underscore anchor: https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks -->*/        
+}
+
+
+
+
+
+
+
 /* Style the navigation bar */ /*https://www.w3schools.com/howto/howto_css_navbar_icon.asp*/
 .navbar1,.navbar2{
   width: 100%;
-  background-color: yellow;
+  background-color: lightgrey;
   overflow: auto;
 }
 
@@ -40,4 +52,30 @@
     float: none;
     display: block;
   }
+}
+
+.button-wrapper {  /*<!-- Citaions for call to action: https://www.drivencreativelymad.com/blog/create-a-simple-call-to-action-button -->*/
+  display: block;
+ 
+}
+.button {
+  border: none;
+  border-radius: 0em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 1em;
+  height:10px;
+  width:150px;
+  text-align: center;
+}
+.cta-button {
+  background-color: #FFE500;
+  color: #000000 ; /*<!--text color-->*/
+}
+
+.cta-button:hover {
+  background-color: #000000;
+  color:#FFE500;
 }
