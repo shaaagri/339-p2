@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	padding-left: 10%;
+	padding-right:10%;
+	 max-width:1200px;
+	 margin:auto;
+	 background-color: white;
+	 font-family: 'Titillium Web', sans-serif;
+}
+
+#product_category_title_one{
+	font-weight:1;
+}
+
+#product_category_title_two{
+	font-weight:bolder;
+}
+
+#single_product_detail{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#product_images{
+	margin-top:2rem;
+	margin-right:3rem;
+}
+
+img{
+	width:80%;
+}
+
+#product_small_images>img{
+	width:5%;
+}
+
+#product_small_images{
+	width:80%;
+	margin-top:1rem;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#product_introduction{
+	margin-top:2rem;
+}
+#product_name{
+	margin-bottom:2rem;
+}
+
+#product_name{
+	font-size:2rem;
+	font-weight:1;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+
+#product_characteristics{
+	margin-left:1rem;
+	margin-bottom:1rem;
+}
+
+#paragraph{
+	font-size:0.5rem;
+	text-align: justify;
+}
+
