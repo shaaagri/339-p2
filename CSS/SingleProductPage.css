@@ -79,3 +79,47 @@ ul li:before {
 	text-align: justify;
 }
 
+#more_information_reviews{
+	border-bottom:1px solid black;
+	padding-top:3rem;
+	font-size:1.5rem;
+}
+
+#more_information_questions{
+	border-bottom:1px solid black;
+	padding-top:1rem;
+	font-size:1.5rem;
+}
+
+#add_to_cart{
+	padding-top:4rem;
+}
+
+.button{
+	text-decoration: none;
+	font-weight:bolder;
+	color:black;
+	background-color:#FFFF00;
+	padding: 0.5rem 2rem;
+}
+
+.button:hover{
+	color:#FFFF00;
+	background-color:black;
+}
+
+#also_like{
+	font-size:2rem;
+	font-weight:1;
+}
+
+#also_like_images>img{
+	width:30%;	
+
+}
+#also_like_images{
+	margin-top:2rem;
+	display:flex;
+	justify-content:space-evenly;
+
+}
