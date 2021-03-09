@@ -158,4 +158,38 @@ footer p{
   line-height:40px;
 }
 
+#loginSection { /*https://coryrylan.com/blog/how-to-center-in-css-with-flexbox*/
+padding:1em;
+width:100vw;
+height:50vh;
 
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#loginSection *{
+padding:1em;
+}
+
+#loginSection a{
+padding:1.5em;
+padding-left:2em;
+padding-right:2em;
+}
+#accountSection{
+padding:1em;
+width:100vw;
+height:50vh;
+
+justify-content:center;
+align-items:center;
+}
+
+#accountSection *{
+padding:0.5em;
+}
+#accountSection a{
+padding:1.5em;
+padding-left:2em;
+padding-right:2em;
+}
