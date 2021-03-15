@@ -1,0 +1,201 @@
+/* CSS Reset by Eric Meyer */
+@import "reset.css";
+
+/* Include custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;900&display=swap');
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 1.33em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #100E00;
+    line-height: 1.25em;
+}
+
+nav,section {
+    padding-top: 1.33em;
+    padding-bottom: 2.25em;
+}
+
+nav {
+    padding-bottom: 3em;
+}
+
+h1,.heading-large{
+    font-weight: 600;
+}
+
+h1,.heading-large {
+    font-size: 2.33rem;   
+    padding-bottom: 1.66rem;
+}
+
+h2,.heading-medium {
+    font-size: 1.66rem;
+    font-weight: 600;
+    padding-bottom: 1.16rem;
+}
+
+h3,.heading-small {
+    font-size: 1.26em;
+    padding-bottom: 1.06rem;
+}
+
+a, a:visited {
+    font-weight: 400;
+    color: #D2BD00;
+    text-decoration: none;
+    padding-right: 1.66em;
+}
+
+a:hover, a:focus {
+    color: #7B6F00;
+}
+
+p {
+    padding: 0 0 1em 0;   
+    width: clamp(45ch, 100%, 75ch);
+}
+
+strong {
+    font-weight: 600;
+}
+
+/*.active, .active:visited, 
+.active:hover, .active:focus {
+    font-weight: 600;
+    color: #100E00;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+    text-underline-position: under;
+}*/
+
+.code {
+    margin-top: 0.5em;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    border: 1px solid #686655;
+    background-color: #E7E5DF;
+    display: inline-block;
+}
+
+.nav-button {
+    padding: 0.33em 0.66em 0.33em 0.66em !important;
+    margin: 0 0.33em 0 0;
+    border: 1px solid #51504B;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0E0D0B !important;
+    display: inline-block;
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: #FFE500;
+}
+
+.nav-button.active {
+    color:white !important;
+    background-color:black;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 9em auto;
+}
+
+#container nav {
+    grid-column: 2 / span 1;
+}
+
+#sidebar a {
+    display: block;
+    padding-bottom: 0.3em;
+}
+
+.sidebar-section {
+    padding-bottom: 2em;
+}
+
+.sidebar-section-header {
+    font-size: 1.066em;
+    text-transform: uppercase;
+    padding-bottom: 0.66em;
+}
+
+.section-container {
+    padding: 0.66em 0 1em 0;    
+}
+
+.extra-padding-top-l {
+    padding-top: 2em;
+}
+
+.extra-padding-top-m {
+    padding-top: 1em;
+}
+
+.extra-margin-left {
+    margin-left: 3em;
+}
+
+.copy {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.33em;
+}
+
+.button {
+    margin-bottom: 0.66em;
+    padding: 0.33em 0.9em 0.33em 0.9em;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.33em;
+    font-weight: 900;
+    background-color: #100E00;
+    color: white;
+    border: 0;
+}
+
+.button:hover, .button:focus {
+    /*background-color: #DCDCDB;
+    color: #100E00;*/
+    cursor: pointer;
+}
+
+.button.cta {
+    background-color: #FFE500; 
+    color: #100E00;   
+}
+
+.button.ghost {
+    font-weight: 600;
+    background-color: white;
+    color: #100E00;   
+    border: 2px solid #100E00;   
+}
+
+.color-swatch {
+    width: 7em;
+    height: 9em;
+    border: 2px solid #100E00;   
+}
+
+.color-swatch-colorbox {
+    width: 7em;
+    height: 7em; 
+}
+
+.color-swatch-colorbox.black {
+    background-color: #0E0D0B;
+}
+
+
