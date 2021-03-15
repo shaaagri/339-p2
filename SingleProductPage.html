@@ -20,14 +20,44 @@
 		</div>
 
 		<section id = "single_product_detail">
+
+			<!--container for the gallery-->
 			<div id = "product_images">
-				<div id = "product_big_image">
-					<img src = "Images/mens_hoodies_grey_front.jpg" alt = "Front view of the man wearing the grey hoodie">
+
+				<!--full width images with number text-->
+				<!--Tutoial reference: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp-->			
+				<div class = "product_big_image">
+					<div class = "numbertext">1/3</div>
+						<img src = "Images/mens_hoodies_grey_front.jpg" alt = "Front view of the man wearing the grey hoodie">
 				</div>
+
+				<div class = "product_big_image">
+					<div class = "numbertext">2/3</div>
+						<img src = "Images/mens_hoodies_grey_back.jpg" alt = "Back view of the man wearing the grey hoodie">
+				</div>
+
+				<div class = "product_big_image">
+					<div class = "numbertext">3/3</div>
+						<img src = "Images/mens_hoodies_grey_closeup.jpg" alt = "Close up view of the man wearing the grey hoodie">
+				</div>
+
+				<!-- Next and Previous buttons -->
+				<a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class = "next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Thumbnail images -->
 				<div id = "product_small_images">
-					<img src = "Images/mens_hoodies_grey_front.jpg" alt = "Front view of the man wearing the grey hoodie">
-					<img src = "Images/mens_hoodies_grey_back.jpg" alt = "Back view of the man wearing the grey hoodie">
-					<img src = "Images/mens_hoodies_grey_closeup.jpg" alt = "Close up view of the man wearing the grey hoodie">
+					<div class = "row">
+						<div class = "column">
+							<img class="demo cursor" src = "Images/mens_hoodies_grey_front.jpg" style="width:40%" alt = "Front view of the man wearing the grey hoodie" onclick="currentSlide(1)">
+						</div>
+						<div class = "column">
+							<img class="demo cursor" style="width:40%" src = "Images/mens_hoodies_grey_back.jpg" alt = "Back view of the man wearing the grey hoodie" onclick="currentSlide(2)">
+						</div>
+						<div class = "column">
+							<img class="demo cursor" src = "Images/mens_hoodies_grey_closeup.jpg" style="width:40%" alt = "Close up view of the man wearing the grey hoodie" onclick="currentSlide(3)">
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -67,7 +97,7 @@
 				<div class = "single_product_also_like">
 					<div class = "also_like_single_image">
 					<a href = "SingleProductPage.html">
-						<img src = "Images/mens_hoodies_orange.jpg" alt = "Front view of the man wearing the orange hoodie">
+						<img src = "Images/mens_hoodies_green.jpg" alt = "Front view of the man wearing the green hoodie">
 					</a>
 					</div>
 					<div class = "single_product_also_like_content">
@@ -81,7 +111,7 @@
 				<div class = "single_product_also_like">
 					<div class = "also_like_single_image">
 					<a href = "SingleProductPage.html">
-						<img src = "Images/mens_hoodies_orange.jpg" alt = "Front view of the man wearing the orange hoodie">
+						<img src = "Images/mens_hoodies_black.jpg" alt = "Front view of the man wearing the black hoodie">
 					</a>
 					</div>
 					<div class = "single_product_also_like_content">
@@ -95,6 +125,7 @@
 			</div>
 
 		</section>
+		<script src="JS/Single_Product_Page.js"></script>
 	</body>
 </html>
 
