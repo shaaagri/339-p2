@@ -8,53 +8,131 @@
 body {
 	padding-left: 10%;
 	padding-right:10%;
-	 max-width:1200px;
-	 margin:auto;
-	 background-color: white;
-	 font-family: 'Titillium Web', sans-serif;
+	max-width:1200px;
+	margin:auto;
+	background-color: white;
+	font-family: 'Titillium Web', sans-serif;
 }
+
 
 img{
 	width:100%;
 }
 
+#product_images{
+	position:relative;
+	margin-top:2rem;
+	margin-right:3rem;
+	font-size:0;
+	width:60%;
+}
 
 #product_category_title_one{
 	font-weight:1;
 }
 
 #product_category_title_two{
-	font-weight:bolder;
+	font-weight:900;
 }
+
+
 
 #single_product_detail{
 	display:flex;
 	justify-content:space-evenly;
 }
 
-#product_big_image>img{
-	width:80%;
+/* Code Reference: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+/* Hide the images by default*/
+.product_big_image{
+	display:none;
 }
 
-#product_images{
-	margin-top:2rem;
-	margin-right:3rem;
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
-#product_small_images>img{
-	width:5%;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-#product_small_images{
-	width:80%;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  position: absolute;
+  top: 0;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.row{
 	margin-top:1rem;
+	font-size:0;
 	display:flex;
-	justify-content:space-evenly;
+	justify-content:space-between;
+}
+
+.row>div:nth-child(2){
+	text-align:center;
+}
+
+.row>div:nth-child(3){
+	text-align:right;
 }
 
 #product_introduction{
+	width:40%;
 	margin-top:2rem;
+	margin-left:2rem;
 }
+
 #product_name{
 	margin-bottom:2rem;
 }
@@ -122,32 +200,59 @@ ul li:before {
 #also_like_images{
 	margin-top:2rem;
 	display:flex;
-	justify-content:space-evenly;
+	justify-content:space-between;
+	flex-wrap: wrap;
 }
 
+#also_like_images>div{
+	flex-basis:30%;
+	margin-bottom:2.5rem;
+}
 .single_product_also_like>.also_like_single_image{
 	overflow:hidden;
 	font-size:0;
 
 }
+
 .also_like_single_image img{
 	transform:scale(1,1);
 	transition:transform 0.5s;
 }
-.also_like_single_image img:hover{
-	transform:scale(1.3, 1.3);
-}
 
 .single_product_also_like{
 	position:relative;
+	width:30%;
 }
+
 .single_product_also_like_content{
+	font-size:1rem;
 	width:100%;
 	bottom:0;
 	left:0;
 	background-color:rgba(255,255,255,0.5);
 	position:absolute;
+	transition:all 0.5s;
 }
+
+.single_product_also_like_content a{
+	text-decoration:none;
+	color:black;
+}
+
+.single_product_also_like:hover img{
+	transform:scale(1.3, 1.3);
+}
+
+.single_product_also_like:hover .single_product_also_like_content{
+	background-color:rgba(255,255,255,0);
+	font-size:1.3rem;
+}
+
+
+section#you_may_also_like{
+	margin-top:3rem;
+}
+
 
 
 
