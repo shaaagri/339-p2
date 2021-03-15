@@ -1,0 +1,54 @@
+*{
+	box-sizing:border-box;
+}
+.navbar {
+display:grid;
+	grid-template-columns:repeat(8, 1fr); 
+	grid-template-rows:2rem 2rem;
+	padding-bottom: 10px;
+   
+}
+.navright1 {
+	grid-column-start:6;
+	grid-column-end:9;
+		grid-row-start:1;
+	grid-row-end:1;
+}
+.navright2 {
+	grid-column-start:5;
+	grid-column-end:9;
+		grid-row-start:2;
+	grid-row-end:2;
+}
+.navleft {
+	grid-row-start:1;
+	grid-row-end:2;
+}
+
+.navcenter {
+	grid-row-start:2;
+grid-column-start:4;
+	grid-column-end:5;
+
+}
+
+/*#loginSection{
+display:grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows:repeat(5,5rem);
+	padding-bottom: 10px;
+
+}
+
+.h2{
+	grid-column-start:1;
+	grid-column-end:2;
+}
+
+
+.email{
+	grid-column-start:1;
+	grid-column-end:2;
+}
+
+*/
