@@ -8,10 +8,10 @@
 body {
 	padding-left: 10%;
 	padding-right:10%;
-	 max-width:1200px;
-	 margin:auto;
-	 background-color: white;
-	 font-family: 'Titillium Web', sans-serif;
+	max-width:1200px;
+	margin:auto;
+	background-color: white;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -32,8 +32,10 @@ img{
 }
 
 #product_category_title_two{
-	font-weight:bolder;
+	font-weight:900;
 }
+
+
 
 #single_product_detail{
 	display:flex;
@@ -112,10 +114,17 @@ img{
 
 .row{
 	margin-top:1rem;
-	border: solid red;
 	font-size:0;
 	display:flex;
 	justify-content:space-between;
+}
+
+.row>div:nth-child(2){
+	text-align:center;
+}
+
+.row>div:nth-child(3){
+	text-align:right;
 }
 
 #product_introduction{
@@ -192,9 +201,13 @@ ul li:before {
 	margin-top:2rem;
 	display:flex;
 	justify-content:space-between;
+	flex-wrap: wrap;
 }
 
-
+#also_like_images>div{
+	flex-basis:30%;
+	margin-bottom:2.5rem;
+}
 .single_product_also_like>.also_like_single_image{
 	overflow:hidden;
 	font-size:0;
