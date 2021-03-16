@@ -61,6 +61,7 @@
 				</div>
 			</div>
 
+			<!-- The text information of a single product -->
 			<div id = "product_introduction">
 				<p id = "product_name">CREST SWEATSHIRT $55</p>
 				<ul id = "product_characteristics">
@@ -72,9 +73,48 @@
 					<li>Model is 6'3'' and wears size XXL</li>
 				</ul>
 				<p id = "paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p id = "more_information_reviews">REVIEWS</p>
-				<p id = "more_information_questions">QUESTIONS</p>
+
+
+				<!--The button of add to cart -->
 				<p id = "add_to_cart"><a href = "" class = "button">add to cart</a></p>
+
+				<!-- Code Reference: https://codeconvey.com/html-expand-collapse-text-without-javascript/ -->
+				<!-- The delivery and more questions part -->
+				<section class = "accordion">
+					<input type = "radio" name = "collapse" id = "delivery">
+					<p class = "more_information_delivery_and_questions">
+						<label for = "delivery">
+							DELIVERY AND RETURNS
+						</label>
+					</p>
+
+					<div class = "accordion_content">
+						<ul id = "delivery_lists">
+							<li>Good News! We are dispatching as normal and ensuring contactless delivery. However, due to COVID-19 we are seeing delays of approximately 5 working days.</li>
+							<li>Free Standard Delivery (Estimated 3-5 Working Days) from over $100.</li>
+							<li>Express Delivery (1-3 Working days)</li>
+							<li>Free Returns on all orders.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class = "accordion">
+					<input type = "radio" name = "collapse" id = "questions">
+					<p class = "more_information_delivery_and_questions">
+						<label for = "questions">
+							QUESTIONS
+						</label>
+					</p>
+
+					<div class = "accordion_content">
+						<ul id = "delivery_lists">
+							<li>Good News! We are dispatching as normal and ensuring contactless delivery. However, due to COVID-19 we are seeing delays of approximately 5 working days.</li>
+							<li>Free Standard Delivery (Estimated 3-5 Working Days) from over $100.</li>
+							<li>Express Delivery (1-3 Working days)</li>
+							<li>Free Returns on all orders.</li>
+						</ul>
+					</div>
+				</section>
 			</div>
 		</section>
 		<section id = "you_may_also_like">
