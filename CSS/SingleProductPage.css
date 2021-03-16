@@ -5,6 +5,7 @@
 	font-family: 'Titillium Web', sans-serif;
 }
 
+<<<<<<< HEAD
 .navi_logos{
 	width:40%;
 }
@@ -128,6 +129,9 @@ display:grid;
 }
 
 .all_contents {
+=======
+body {
+>>>>>>> main
 	padding-left: 10%;
 	padding-right:10%;
 	max-width:1200px;
@@ -447,100 +451,6 @@ section#you_may_also_like{
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
 	border: 1px solid black;
-}
-
-
-.footer_container{
-  max-width:1170px;
-/*  background-color:red;*/
-  margin:auto;
-
-}
-
-.footer_row{
-  display:flex;
-  flex-wrap:wrap;
-}
-
-
-.footer {   /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 40px 0;
-  background-color: black;
-  color: white;
-   display: inline-block;
-   
-  /*text-align: center;*/
-}
-.footer-col{ /*https://www.youtube.com/watch?v=YOb67OKw62s*/
-  width:25%;
-  padding:0 15px;
-}
-.footer-col h4{
- font-size:15px;
- color:white;
- text-transform:capitalize;
- margin-bottom:20px;
- font-weight:bolder;
- position: relative;
-}
-
-.footer-col ul{
-	list-style-type: none;
-}
-
-.footer-col ul li a{
- font-size:13px;
- color:white;
- text-transform:capitalize;
- text-decoration:none;
- margin-bottom:10px;
- font-weight:300;
- display:block;
- color:white;
-}
-
-.footer-col ul li a:hover{
-  color:#ffffff;
-  color:yellow;
-
-}
-.footer-col.social-links a{
-  display:inline-block;
-  height:40px;
-  width:40px;
-  background-color:rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align:center;
-  line-height:40px;
-}
-
-/*adjust social media information layout*/
-.social-links{
-  font-size:13px;
-  color:white;
-  font-weight:300px;
-}
-
-#business_hour{
-  margin-bottom:1rem;
-}
-
-.footer_logo{
-  margin-bottom:1rem;
-  width:10%;
-}
-
-.footer_socialmedia_logos{
-  margin-bottom:1rem;
-  display:flex;
-}
-
-.socialmedia_logos{
-	margin-right:0.5rem;
-	width:5%;
 }
 
 
