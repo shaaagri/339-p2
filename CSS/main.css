@@ -70,7 +70,7 @@ border-bottom: 1px solid #000000;
 }
 
 /* Navbar links on mouse-over */
-.navright1 a:hover {
+.navright1 a:hover {     
   color: black;
   border: 1px solid black;
 }
@@ -78,6 +78,14 @@ border-bottom: 1px solid #000000;
   color: black;
   
 }
+.navright2 .search-container {  /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_searchbar3*/
+  float: right;
+  margin:10px;
+}
+
+
+
+
 /* Current/active navbar link */
 .active1 {
   background-color: #4CAF50;
@@ -149,7 +157,7 @@ footer p{
   width: 100%;
   padding: 40px 0;
   background-color: black;
-  color: white;
+ 
    display: inline-block;
    
   /*text-align: center;*/
@@ -175,21 +183,22 @@ footer p{
  margin-bottom:10px;
  font-weight:300;
  display:block;
- color:white;
+
 }
 .footer-col ul li a:hover{
-  color:#ffffff;
+
   color:yellow;
 
 }
-.footer-col.social-links a{
+ .social-links a{
   display:inline-block;
   height:40px;
   width:40px;
-  background-color:rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
+/*  background-color:rgba(255,255,255,0.2);*/
+  margin-right:0 10px 10px 0; 
   text-align:center;
   line-height:40px;
+  background-repeat:no-repeat;  //
 }
 
 /*adjust social media information layout*/
@@ -215,6 +224,19 @@ footer p{
 
 ul {
   list-style-type: none;
+}
+
+.contact li{
+  font-size:13px;
+ color:grey;
+ text-transform:capitalize;
+ text-decoration:none;
+ margin-bottom:10px;
+ font-weight:300;
+ display:block;
+
+
+  padding:0 15px;
 }
 
 #loginSection { /*https://coryrylan.com/blog/how-to-center-in-css-with-flexbox*/
