@@ -10,7 +10,7 @@
 <header>
 </header>
 
-    <body>
+<body>
 <div class="navbar">
   
 <div class="navright1"> <!-- https://www.w3schools.com/howto/howto_css_navbar_icon.asp -->
@@ -33,8 +33,12 @@
 </div>
 
 <div class="navcenter">
-    <a href="AboutUs.html">WOMANS</a>
-    <a href="HelpPage.html">MANS</a>
+  <div>
+    <a href="ProductLists.html">WOMEN</a>
+  </div>
+  <div>
+    <a href="ProductLists.html">MANS</a>
+  </div>
 </div>
 
 </div>
@@ -42,9 +46,10 @@
  
 <section id= "loginSection">
 
- <div class="main">
+  <div class="main">
 
-<h2> SIGN INTO YOUR ACCOUNT</h2>  <!--https://www.youtube.com/watch?v=RcIiQHAAnPo ,https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password#placeholder-->
+    <h2> SIGN INTO YOUR ACCOUNT</h2>  
+    <!--https://www.youtube.com/watch?v=RcIiQHAAnPo ,https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password#placeholder-->
   <form>
   <input type= "text" name="email" placeholder="Email address">  
   </form>
@@ -57,7 +62,9 @@
 
   <form> <!-- https://www.codingfactory.net/11570 -->
   <label><input type="checkbox" name="remember" value="remember" checked> Remember me</label>
-  </form>   
+  </form>  
+  
+
           
  <div class="button-wrapper">
   <a class="button cta-button" href="#0">LOG IN</a>
@@ -100,21 +107,21 @@
         <div class="footer-col">
        <!--    <h4>FOLLOW UP</h4> -->
   
-          <div class="social-links"> <!-- how to add image: https://teamtreehouse.com/community/add-link-in-footer -->
+          <div class="social-links footer_logo"> <!-- how to add image: https://teamtreehouse.com/community/add-link-in-footer -->
            <a href="#"><img src="img/logo.png" alt="logo" width="20" height="20"></a>
            </div>
 
-           <div class="social-links">
+           <div class="social-links footer_socialmedia_logos">
             <a href="#"><img src="img/facebook_icon.png" alt="facebook logo" width="20" height="20"></a> 
             <a href="#"><img src="img/twitter_icon.png" alt="twitter logo" width="20" height="20"></a> 
             <a href="#"><img src="img/instagram_icon.png" alt="instagramlogo" width="20" height="20"></a>
 <!--  --> </div>
 
-            <ul>
+            <ul class = "social-links">
             <li> (604)1234-567</li>
             <li> Brand@gmail.com</li>
-            <li> 7:30 a.m. - 5:30 p.m., Monday - Friday</li>
-             <li>   <a href="#"><img src="img/map.png" alt="store location" width="20" height="20"> Store locations</a> </li>
+            <li id = "business_hour"> 7:30 a.m. - 5:30 p.m., Monday - Friday</li>
+             <li id = "store_locations">   <a href="#"><img src="img/map.png" alt="store location" width="20" height="20"> Store locations</a> </li>
             
             </ul>
         </div>
