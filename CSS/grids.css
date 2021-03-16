@@ -27,8 +27,9 @@ display:grid;
 
 .navcenter {
 	grid-row-start:2;
-	grid-column-start:4;
-	grid-column-end:6;
+grid-column-start:4;
+	grid-column-end:5;
+
 }
 
 /*#loginSection{
