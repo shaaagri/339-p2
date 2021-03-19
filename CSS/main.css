@@ -247,3 +247,68 @@ padding:1.5em;
 padding-left:2em;
 padding-right:2em;
 }
+
+/* https://www.youtube.com/watch?v=YesSVqjcDts&ab_channel=CodingMarket*/
+
+/*https://www.youtube.com/watch?v=PzSxehu4G78*/
+.tabContainer{ 
+display:flex;
+position:relative;
+}
+.tabContainer .buttonContainer {
+
+position:fixed;
+width:20%;
+height:100%;
+background:white;
+padding:50px 0;
+  color: black;
+border-right: 1px solid rgba(0,0,0,0.05);
+}
+.tabContainer .buttonContainer  h2{
+
+  color:black;
+  text-transform: uppercase;
+  text-align:center;
+ margin-bottom: 30px;
+}
+.tabContainer .buttonContainer  ul li{
+text-align:center;
+  padding:15px;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+   border-top:1px solid rgba(255,255,255,0.05);
+}
+.tabContainer .buttonContainer  ul li a{
+  color:black;
+  display:block;
+}
+
+.tabContainer .buttonContainer  ul  :hover{
+
+  background: yellow;
+
+}
+
+/*https://www.youtube.com/watch?v=YesSVqjcDts&ab_channel=CodingMarket*/
+/*.tabContainer{
+  height:350px;
+  width:100%;
+}
+.tabContainer .buttonContainer{
+  height:15%;
+}
+.tabContainer .buttonContainer button{
+  width:25%;
+  height:100%;
+  float:left;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  padding:10px
+font-size:18px;
+background-color:grey;
+
+}
+.tabContainer .buttonContainer button:hover{
+  background-color:yellow;
+}*/

@@ -3,15 +3,14 @@
   <head>
     
     <meta charset="utf-8" />
-    <title>CrazyBee_About Us</title>
+    <title>CrazyBee_Help</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="css/grids.css" rel="stylesheet">
   </head>
 
-<header>
-</header>
 
-    <body>
+
+   
 <div class="navbar">
   
 <div class="navright1"> <!-- https://www.w3schools.com/howto/howto_css_navbar_icon.asp -->
@@ -30,8 +29,7 @@
    
       <input type="text" placeholder="Search" name="search">
 
-    </form>
-  </div> 
+   </div> 
   
 </div>
 
@@ -44,21 +42,49 @@
     <a href="ProductLists.html">WOMANS</a>
     <a href="ProductLists.html">MANS</a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
+
+<!-- <div class="help-wrapper">
+  <div class="help-sidebar">
+    <h2>Need Help?</h2>
+    <ul>
+      <li><a href="#"> Order</a></li>
+      <li><a href="#"> Delivery</a></li>
+      <li><a href="#"> Return</a></li>
+      <li><a href="#"> Payment Option</a></li>
+      <li><a href="#"> Exchange</a></li>
+      <li><a href="#"> Club Membership</a></li>
+      <li><a href="#"> My Account</a></li>
+    </ul>
+  </div>
+  <div class="main_content">
+    <div class="header"> hi</div> -->
+
+<div class="tabContainer">
+ 
+  <div class="buttonContainer"> 
+ <h2>Need Help?</h2>
+<ul>
+   <li> <button onclick="showPanel(0,'#f44336')"> Order</button>
+   <div class="tabPanel"> Order:Content </div> </li>
+  <li><button onclick="showPanel(1,'#f44246')"> Delivery</button> 
+  <div class="tabPanel"> Delivery:Content </div> </li>
+  <li>  <button onclick="showPanel(2,'#2196f3')"> Return</button>
+  <div class="tabPanel"> Return:Content </div> </li>
+   <li> <button onclick="showPanel(3,'#f33732')"> Payment</button>
+  <div class="tabPanel"> Payment:Content </div> </li>
+ <li><button onclick="showPanel(4,'#f42346')"> Exchange</button>
+<div class="tabPanel"> Exchange:Content </div></li>
+<li> <button onclick="showPanel(5,'#f67836')"> Club Membership</button>
+ <div class="tabPanel"> Club Membership:Content </div> </li>
+<li> <button onclick="showPanel(6,'#f13436')"> My Account</button>
+ <div class="tabPanel"> My Account:Content </div> </ul>
+</ul>
+  </div>
+                        
+</div>
+
+   <script src="java/helpPage.js"></script>
 <footer class="footer"> <!-- https://www.youtube.com/watch?v=YOb67OKw62s -->
     <div class="container">
       <div class="row">
