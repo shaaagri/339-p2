@@ -193,7 +193,7 @@ footer p{
   margin-right:0 10px 10px 0; 
   text-align:center;
   line-height:40px;
-  background-repeat:no-repeat;  //
+  background-repeat:no-repeat;  
 }
 ul {
   list-style-type: none;
@@ -248,67 +248,37 @@ padding-left:2em;
 padding-right:2em;
 }
 
-/* https://www.youtube.com/watch?v=YesSVqjcDts&ab_channel=CodingMarket*/
+.tabContainer{  /*https://www.youtube.com/watch?v=PzSxehu4G78*/
 
-/*https://www.youtube.com/watch?v=PzSxehu4G78*/
-.tabContainer{ 
-display:flex;
-position:relative;
+  display:flex;
+  justify-content:center;
+align-items:center;
+ padding:1.5em;
 }
-.tabContainer .buttonContainer {
+.tabContainer .buttonContainer button{
+border:none;
+background:none;
 
-position:fixed;
-width:20%;
-height:100%;
-background:white;
-padding:50px 0;
-  color: black;
-border-right: 1px solid rgba(0,0,0,0.05);
 }
-.tabContainer .buttonContainer  h2{
-
-  color:black;
-  text-transform: uppercase;
+.tabContainer .buttonContainer h2{
+ text-transform: uppercase;
   text-align:center;
  margin-bottom: 30px;
 }
-.tabContainer .buttonContainer  ul li{
+
+.tabContainer .buttonContainer ul li{
 text-align:center;
   padding:15px;
-  border-bottom:1px solid rgba(0,0,0,0.05);
-   border-top:1px solid rgba(255,255,255,0.05);
-}
-.tabContainer .buttonContainer  ul li a{
-  color:black;
-  display:block;
+  border-top:1px solid rgba(0,0,0,0.05);
+   border:1px solid rgba(0,0,0,0.05);
+   /*border-top:1px solid rgba(255,255,255,0.05);*/
 }
 
 .tabContainer .buttonContainer  ul  :hover{
-
   background: yellow;
+}
+.tabContainer .contentContainer {
+padding:75px;
 
 }
 
-/*https://www.youtube.com/watch?v=YesSVqjcDts&ab_channel=CodingMarket*/
-/*.tabContainer{
-  height:350px;
-  width:100%;
-}
-.tabContainer .buttonContainer{
-  height:15%;
-}
-.tabContainer .buttonContainer button{
-  width:25%;
-  height:100%;
-  float:left;
-  border:none;
-  outline:none;
-  cursor:pointer;
-  padding:10px
-font-size:18px;
-background-color:grey;
-
-}
-.tabContainer .buttonContainer button:hover{
-  background-color:yellow;
-}*/

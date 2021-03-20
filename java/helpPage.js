@@ -1,14 +1,14 @@
 var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanels=document.querySelectorAll(".tabContainer .tabPanel");
+var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
 
 function showPanel(panelIndex,colorCode){
 	tabButtons.forEach(function(node){
-		node.style.backgroundColor="";
+		node.style.backgroundColor="none";
 		node.style.color="";
 
 	});
 	tabButtons[panelIndex].style.backgroundColor=colorCode;
-	tabButtons[panelIndex].style.color="white";
+	tabButtons[panelIndex].style.color="";
 	tabPanels.forEach(function(node){
 		node.style.display="none";
 
@@ -18,4 +18,7 @@ function showPanel(panelIndex,colorCode){
 
 }
 
-showPanel(0, '#f44336');
+showPanel(0);
+
+
+// https://www.youtube.com/watch?v=PzSxehu4G78

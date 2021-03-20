@@ -52,3 +52,15 @@ display:grid;
 }
 
 */
+
+.tabContainer{
+
+display:grid;
+grid-template-columns:1fr 4fr;
+grid-template-rows:1fr;
+}
+.contentConatiner{
+	grid-template-columns:2;
+
+
+}
