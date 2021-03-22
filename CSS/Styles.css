@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
 	box-sizing: border-box;
 	margin:0;
@@ -27,7 +34,6 @@
   font-size: 15px;
   font-weight:50;
 }
-
 
 
 .navright2  a {
@@ -96,7 +102,7 @@
 /*navi grid*/
 
 .navbar {
-display:grid;
+	display:grid;
 	grid-template-columns:repeat(8, 1fr); 
 	grid-template-rows:2rem 2rem;
 	padding-bottom: 10px;
@@ -155,11 +161,13 @@ img{
 }
 
 #product_category_title_two{
-	font-weight:900;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:bolder;
 }
 
 
 #single_product_detail{
+	max-width: 1400px;
 	display:flex;
 	justify-content:space-evenly;
 }
@@ -422,7 +430,6 @@ section#you_may_also_like{
 }
 
 /* adjust the product list side bar */
-
 /* code reference: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp; */
 .sidenav {
   height: auto;
@@ -448,6 +455,215 @@ section#you_may_also_like{
 	border: 1px solid black;
 }
 
+
+/* about us page */
+
+.about_us_content{
+	position:absolute;
+	text-align:center;
+	color:white;
+	width:50%;
+	top:25%;
+	left:25%;
+	text-shadow:5px 5px 2px black;
+}
+
+.about_us_title{
+	font-size:5rem;
+    font-family: 'Droid Sans', sans-serif;
+    margin-bottom:8rem;
+}
+
+.about_us_information{
+	font-size:1.5rem;
+}
+
+
+.about_us_background_image{
+	position:relative;
+	width:100%;
+	font-size:0rem;
+}
+
+
+/* about us page solgan section */
+/* slogan section */
+#about_slogan{
+    background-color:#FFFF00;
+}
+.about_us_smalltitle{
+	font-size:3rem;
+    font-family: 'Droid Sans', sans-serif;
+    margin-bottom:8rem;
+
+}
+
+.about_us_background_smallimage {
+	width:100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#about_slogan >.about_us_background_smallimage div:nth-of-type(1){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+#about_slogan >.about_us_background_smallimage div:nth-of-type(2){
+    width: 50%;
+    flex-grow: 1;
+    font-size:0;
+
+}
+
+#about_slogan > .about_us_background_smallimage div:nth-of-type(2) img{
+	width:100%;
+
+}
+
+/* strategy section */
+
+#about_strategy > .about_us_background_smallimage div:nth-of-type(1){
+    width: 50%;
+    flex-grow: 1;
+    font-size:0;
+
+}
+
+#about_strategy > .about_us_background_smallimage div:nth-of-type(1) img{
+	width:100%;
+
+}
+
+#about_strategy > .about_us_background_smallimage div:nth-of-type(2){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+/* newsletter section */ 
+
+#about_newsletter{
+    background-color:#FFFF00;
+
+}
+
+#about_newsletter >.about_us_background_smallimage div:nth-of-type(1){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+#about_newsletter >.about_us_background_smallimage div:nth-of-type(2){
+    width: 50%;
+    flex-grow: 1;
+    font-size:0;
+
+}
+
+#about_newsletter > .about_us_background_smallimage div:nth-of-type(2) img{
+	width:100%;
+
+}
+
+/* about us page work place section */ 
+
+
+#about_workplace > .about_us_background_smallimage div:nth-of-type(1){
+    width: 50%;
+    flex-grow: 1;
+    font-size:0;
+
+}
+
+#about_workplace > .about_us_background_smallimage div:nth-of-type(1) img{
+	width:100%;
+
+}
+
+#about_workplace > .about_us_background_smallimage div:nth-of-type(2){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+/* about us page join us section */ 
+
+
+#about_join_us >.about_us_background_smallimage div:nth-of-type(1){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+#about_join_us >.about_us_background_smallimage div:nth-of-type(2){
+    width: 50%;
+    flex-grow: 1;
+    font-size:0;
+
+}
+
+#about_join_us > .about_us_background_smallimage div:nth-of-type(2) img{
+	width:100%;
+
+}
+.about_us_smallinformation{
+	margin-bottom:5rem;
+}
+
+/* about us page buttons */ 
+
+.about_button{
+	text-decoration: none;
+	font-weight:bolder;
+	color:#FFFF00;
+	background-color:black;
+	padding: 1rem 3rem;
+	transition: all 0.5s;
+}
+
+
+/* add decoration of the button when being hovered */
+.about_button:hover{
+	color: black ;
+	background-color:#FFFF00;
+}
+
+
+.about_us_smallcontent{
+	text-align:center;
+}
+
+
+/* footer */
+
 .footer_container{
   max-width:1170px;
 /*  background-color:red;*/
@@ -468,7 +684,7 @@ section#you_may_also_like{
   padding: 40px 0;
   background-color: black;
   color: white;
-   display: inline-block;
+  display: inline-block;
    
   /*text-align: center;*/
 }
