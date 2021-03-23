@@ -4,9 +4,10 @@
 	<head>
 		<meta chaset = "utf-8">
 		<meta name = "viewport" content = "width = device - width, initial - scale = 1.0">
-		<title>About Us</title>
+		<title>YOUR SHOPPING CART</title>
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="CSS/Styles.css">
+		<link rel="stylesheet" href="CSS/shoppingCart.css">
 	</head>
 
 	<body>
@@ -45,17 +46,167 @@
 			</div>
 		</header>
 		<section class = "all_contents">
-			<h2>YOUR SHOPPING CART</h2>
+			<h2 id = cart_title>YOUR SHOPPING CART</h2>
 			<div id = "shopping_cart_items">
-				<div id = "left_items">
-					<h3>ITEM</h3>
-				</div>
-				<div id = "right_items">
-					<h2>TOTAL</h2>
-				</div>
+
+
 			</div>
 
+			<div id = "cart_things">
+				<div>
+
+					<div id = "shopping_cart_items">
+						<div class = "cart_row">
+							<div class = "cart_image">
+								<h3>ITEM</h3>
+							</div>
+							<div class = "cart_name">
+								<h3>NAME</h3>
+							</div>
+							<div class = "cart_price">
+								<h3>PRICE</h3>
+							
+							</div>
+							<div class = "cart_quantity">
+								<h3>QTY</h3>
+							</div>
+						</div>
+					</div>
+					<div class = "cart_row cart_row_info">
+						<div class = "cart_image">
+							<img class = "cart_image" src = "Images/mens_hoodies_black.jpg" alt = "a man in a black hoodie">
+						</div>
+						<div class = "cart_name">
+							<p>CREAST SWEATSHIRT</p>
+							<P>M</P>
+						</div>
+						<div class = "cart_price">
+							<p>$60</p>
+						</div>
+						<div class = "cart_quantity">
+							<p>1</p>
+						</div>
+					</div>
+
+
+					<div class = "cart_row cart_row_info">
+						<div class = "cart_image">
+							<img class = "cart_image" src = "Images/mens_hoodies_dark_blue.jpg" alt = "a man in a blue hoodie">
+						</div>
+						<div class = "cart_name">
+							<p>CREAST SWEATSHIRT</p>
+							<P>M</P>
+						</div>
+						<div class = "cart_price">
+							<p>$60</p>
+						</div>
+						<div class = "cart_quantity">
+							<p>1</p>
+						</div>
+					</div>
+
+					<div class = "cart_row cart_row_info">
+						<div class = "cart_image">
+							<img class = "cart_image" src = "Images/mens_hoodies_green.jpg" alt = "a man in a green hoodie">
+						</div>
+						<div class = "cart_name">
+							<p>CREAST SWEATSHIRT</p>
+							<P>M</P>
+						</div>
+						<div class = "cart_price">
+							<p>$60</p>
+						</div>
+						<div class = "cart_quantity">
+							<p>1</p>
+						</div>
+					</div>
+
+					<div class = "cart_row cart_row_info cart_row_info_end">
+						<div class = "cart_image">
+							<img class = "cart_image" src = "Images/mens_hoodies_red.jpg" alt = "a man in a red hoodie">
+						</div>
+						<div class = "cart_name">
+							<p>CREAST SWEATSHIRT</p>
+							<P>M</P>
+						</div>
+						<div class = "cart_price">
+							<p>$60</p>
+						</div>
+						<div class = "cart_quantity">
+							<p>1</p>
+						</div>
+					</div>
+				</div>
+
+				<div id = "right_items">
+						<h3>TOTAL</h3>
+						<p>$240</p>
+						<p id = "add_to_cart"><a href = "" class = "button">CHECKOUT</a></p>
+				</div>
+			</div>
 		</section>
+
+			<footer class="footer"> <!-- https://www.youtube.com/watch?v=YOb67OKw62s -->
+    		<div class="footer_container">
+      			<div class="footer_row">
+        			<div class="footer-col">
+          				<h4>SUPPORT</h4>
+          				<ul>
+				            <li><a href="#"> Order Tracking</a></li>
+				            <li><a href="#"> Delivery & Return </a></li>
+				            <li><a href="#"> Payment Option</a></li>
+				            <li><a href="#"> Club Membership</a></li>
+				            <li><a href="#"> My Account</a></li>
+        				</ul>
+        			</div>
+          			<div class="footer-col">
+        				<h4>ABOUT US</h4>
+        				<ul>
+				            <li><a href="#"> Our Mission</a></li>
+				            <li><a href="#"> Strategy </a></li>
+				            <li><a href="#"> Newsletters</a></li>
+				            <li><a href="#"> Careers</a></li>
+				            <li><a href="#"> Club Membership</a></li>
+        				</ul>
+        			</div>
+
+        			<div class="footer-col">
+        				<h4>CITATION</h4>
+        				<ul>
+            				<li><a href="#"> citations</a></li>
+         				</ul>
+        			</div>
+      				<div class="footer-col">
+       					<!--    <h4>FOLLOW UP</h4> -->
+ 
+            			<div class="social-links footer_logo"> <!-- how to add image: https://teamtreehouse.com/community/add-link-in-footer -->
+          					 <a href="#"><img src="IMG/logo.png" alt="logo"></a>
+            			</div>
+
+			            <div class="social-links footer_socialmedia_logos">
+			            	<div class = "socialmedia_logos">
+					           	<a href="#"><img src="IMG/facebook_icon.png" alt="facebook logo"></a>
+					        </div> 
+					        <div class = "socialmedia_logos">
+					            <a href="#"><img src="IMG/twitter_icon.png" alt="twitter logo"></a> 
+					        </div>
+					        <div class = "socialmedia_logos">
+					            <a href="#"><img src="IMG/instagram_icon.png" alt="instagramlogo"></a>
+					        </div>
+						</div>
+
+				        <ul class = "social-links">
+				            <li> (604)1234-567</li>
+				            <li> Brand@gmail.com</li>
+				            <li id = "business_hour"> 7:30 a.m. - 5:30 p.m., Monday - Friday</li>
+				            <li id = "store_locations">   <a href="#"><img class = "socialmedia_logos" src="IMG/map.png" alt="store location"> Store locations</a> 
+				            </li>
+			            </ul>
+			        </div>
+
+			  	</div>
+			</div>       
+ 		</footer>
 
 	</body>
 </html>
