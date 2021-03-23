@@ -160,7 +160,7 @@ img{
 	font-weight:1;
 }
 
-#product_category_title_two{
+h2{
 	font-family: 'Droid Sans', sans-serif;
 	font-weight:bolder;
 }
@@ -660,6 +660,8 @@ section#you_may_also_like{
 .about_us_smallcontent{
 	text-align:center;
 }
+
+/* shopping cart stuffs */
 
 
 /* footer */
