@@ -69,39 +69,51 @@
             <p>The main navigation module to be placed at the top of every page.</p>
 
             <header>
-              <nav id="main-nav" class="demo"> 
- 
+              <nav id="main-nav">
                 <div id="main-nav__logo">
                   <a href="index.htm"><img src="../img/company_logo.png" alt="company logo"></a>
                 </div>
-
                 <div id="main-nav__stretch">
-                  <div class="main-nav__central-item active">Womens</div>
-                  <div class="main-nav__central-item">Mens</div>
+                  <div class="main-nav__central-item active" aria-label="womens">Womens</div>
+                  <div class="main-nav__central-item" aria-label="mens">Mens</div>
                 </div>
-
                 <div id="main-nav__corner">
                   <div id="main-nav__corner__top-nav">
-                    <div class="main-nav__corner__top-nav__btn">ABOUT US</div>
-                    <div class="main-nav__corner__top-nav__btn">HELP</div>
-                    <div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div>
+                    <a href="javascript:void(0)"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
+                    <a href="javascript:void(0)"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
+                    <a href="javascript:void(0)"><div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div></a>
                   </div>  
-
                   <div id="main-nav__corner__bottom-nav">
                     <div id="main-nav__corner__bottom-nav__search-bar">
                       <input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
                     </div>
-
                     <div class="main-nav__corner__bottom-nav__btn">
                       <i class="far fa-heart"></i>
                     </div>
                     <div class="main-nav__corner__bottom-nav__btn">
-                      <i class="fas fa-shopping-cart"></i>
+                      <a href="javascript:void(0)"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                   </div>  
-
                 </div>
-
+                <div id="main-nav__dropdown">
+                  <div class="main-nav__dropdown__col">
+                    <h4>Trending</h4>
+                    <ul><li>New Releases</li><li>Bestsellers</li><li>Events</li></ul>
+                  </div>
+                  <div class="main-nav__dropdown__col">
+                    <h4>Clothing</h4>
+                    <ul><li>Base Layers</li><li>Tank Tops</li><li>Bottoms</li><li>Hoodies & Jackets</li><li>Underwear</li></ul>
+                  </div>
+                  <div class="main-nav__dropdown__col">
+                    <h4>Shoes</h4>
+                    <ul><li>Life Style</li><li>Training & Gym</li><li>Running</li><li>All Shoes</li></ul>
+                  </div>
+                  <div class="main-nav__dropdown__col">
+                    <h4>Accessories</h4>
+                    <ul><li>Bags & Backpacks</li><li>Water Bottles</li><li>Equipments</li><li>Socks</li></ul>
+                  </div>
+                  <div id="main-nav__dropdown__arrow"></div>
+                </div>      
               </nav>
             </header>
           </div>
@@ -112,14 +124,14 @@
       &lt;a href=&quot;index.htm&quot;&gt;&lt;img src=&quot;img/company_logo.png&quot; alt=&quot;company logo&quot;&gt;&lt;/a&gt;
     &lt;/div&gt;
     &lt;div id=&quot;main-nav__stretch&quot;&gt;
-      &lt;div class=&quot;main-nav__central-item active&quot;&gt;Womens&lt;/div&gt;
-      &lt;div class=&quot;main-nav__central-item&quot;&gt;Mens&lt;/div&gt;
+      &lt;div class=&quot;main-nav__central-item active&quot; aria-label=&quot;womens&quot;&gt;Womens&lt;/div&gt;
+      &lt;div class=&quot;main-nav__central-item&quot; aria-label=&quot;mens&quot;&gt;Mens&lt;/div&gt;
     &lt;/div&gt;
     &lt;div id=&quot;main-nav__corner&quot;&gt;
       &lt;div id=&quot;main-nav__corner__top-nav&quot;&gt;
-        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;ABOUT US&lt;/div&gt;
-        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;HELP&lt;/div&gt;
-        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;Username&lt;/div&gt;
+        &lt;a href=&quot;about_us.htm&quot;&gt;&lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;ABOUT US&lt;/div&gt;&lt;/a&gt;
+        &lt;a href=&quot;help.htm&quot;&gt;&lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;HELP&lt;/div&gt;&lt;/a&gt;
+        &lt;a href=&quot;sign_in.htm&quot;&gt;&lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;Username&lt;/div&gt;&lt;/a&gt;
       &lt;/div&gt;  
       &lt;div id=&quot;main-nav__corner__bottom-nav&quot;&gt;
         &lt;div id=&quot;main-nav__corner__bottom-nav__search-bar&quot;&gt;
@@ -129,10 +141,29 @@
           &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
         &lt;/div&gt;
         &lt;div class=&quot;main-nav__corner__bottom-nav__btn&quot;&gt;
-          &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+          &lt;a href=&quot;shopping_cart.htm&quot;&gt;&lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/a&gt;
         &lt;/div&gt;
       &lt;/div&gt;  
     &lt;/div&gt;
+    &lt;div id=&quot;main-nav__dropdown&quot;&gt;
+      &lt;div class=&quot;main-nav__dropdown__col&quot;&gt;
+        &lt;h4&gt;Trending&lt;/h4&gt;
+        &lt;ul&gt;&lt;li&gt;New Releases&lt;/li&gt;&lt;li&gt;Bestsellers&lt;/li&gt;&lt;li&gt;Events&lt;/li&gt;&lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;main-nav__dropdown__col&quot;&gt;
+        &lt;h4&gt;Clothing&lt;/h4&gt;
+        &lt;ul&gt;&lt;li&gt;Base Layers&lt;/li&gt;&lt;li&gt;Tank Tops&lt;/li&gt;&lt;li&gt;Bottoms&lt;/li&gt;&lt;li&gt;Hoodies &amp; Jackets&lt;/li&gt;&lt;li&gt;Underwear&lt;/li&gt;&lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;main-nav__dropdown__col&quot;&gt;
+        &lt;h4&gt;Shoes&lt;/h4&gt;
+        &lt;ul&gt;&lt;li&gt;Life Style&lt;/li&gt;&lt;li&gt;Training &amp; Gym&lt;/li&gt;&lt;li&gt;Running&lt;/li&gt;&lt;li&gt;All Shoes&lt;/li&gt;&lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;main-nav__dropdown__col&quot;&gt;
+        &lt;h4&gt;Accessories&lt;/h4&gt;
+        &lt;ul&gt;&lt;li&gt;Bags &amp; Backpacks&lt;/li&gt;&lt;li&gt;Water Bottles&lt;/li&gt;&lt;li&gt;Equipments&lt;/li&gt;&lt;li&gt;Socks&lt;/li&gt;&lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;main-nav__dropdown__arrow&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;      
   &lt;/nav&gt;
 &lt;/header&gt;</pre></code>
           
@@ -151,18 +182,18 @@
               <div id="footer__nav">
                 <ul>
                   <li class="footer__col-caption">Support</li>
-                  <a href="#"><li class="footer__col-item">Order Tracker</li></a>
-                  <a href="#"><li class="footer__col-item">Delivery & Return</li></a>
-                  <a href="#"><li class="footer__col-item">Payment Options</li></a>
-                  <a href="#"><li class="footer__col-item">Club Membership</li></a>
-                  <a href="#"><li class="footer__col-item">My Account</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Order Tracker</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Delivery & Return</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Payment Options</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Club Membership</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">My Account</li></a>
                 </ul> 
                 <ul>
                   <li class="footer__col-caption">OUR COMPANY</li>
-                  <a href="#"><li class="footer__col-item">About Us</li></a>
-                  <a href="#"><li class="footer__col-item">Style Guide</li></a>
-                  <a href="#"><li class="footer__col-item">Citations</li></a>
-                  <a href="#"><li class="footer__col-item">GitHub</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">About Us</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Style Guide</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">Citations</li></a>
+                  <a href="javascript:void(0)"><li class="footer__col-item">GitHub</li></a>
                 </ul>  
               </div> 
               <div id="footer__right">
@@ -233,7 +264,7 @@
             <nav class="breadcrumbs">
               <a href="javascript:void(0)" class="breadcrumbs__first-level">Womens</a>
               <div class="breadcrumbs__separator">/</div>
-              <a href="avascript:void(0)" class="breadcrumbs__last-level">Hoodies & Jackets</a>
+              <a href="javascript:void(0)" class="breadcrumbs__last-level">Hoodies & Jackets</a>
             </nav>
 
             <code class="sg-code extra-marg-t"><pre>&lt;nav class=&quot;breadcrumbs&quot;&gt;
@@ -406,23 +437,31 @@
           <div class="extra-pad-b">
             <p>For use in catalogs and elsewhere.</p>
 
-
-            <div class="product-card">
-              <a href="#">
+            <div class="product-card extra-pad-b">
+              <a href="javascript:void(0)">
                 <img src="../img/products/mens_hoodies_orange.jpg" alt="Front view of the man wearing the orange hoodie">
                 <div class="product-card__btn-wishlist-add">
                   <i class="fas fa-heart"></i>
                 </div>
                 <div class="product-card__info-block">
                   <h4>CREST SWEETSHIRT</h4>
-                  <div class="product-card__info-block__price">55$</div>
+                  <div class="product-card__info-block__price">59.00$</div>
                 </div>
               </a>
-            </div>
+            </div><br/>
 
-            <code class="sg-code extra-marg-t"><pre>
-
-            </pre></code>
+            <code class="sg-code extra-marg-t"><pre>&lt;div class=&quot;product-card&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;img/products/mens_hoodies_orange.jpg&quot; alt=&quot;Front view of the man wearing the orange hoodie&quot;&gt;
+    &lt;div class=&quot;product-card__btn-wishlist-add&quot;&gt;
+      &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;product-card__info-block&quot;&gt;
+      &lt;h4&gt;CREST SWEETSHIRT&lt;/h4&gt;
+      &lt;div class=&quot;product-card__info-block__price&quot;&gt;59.00$&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre></code>
 
           </div>
         </section>

@@ -22,40 +22,59 @@
 
   <body>
     <header>
-	<nav id="main-nav">
-		<div id="main-nav__logo">
-		<a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
-		</div>
-		<div id="main-nav__stretch">
-		<div class="main-nav__central-item active">Womens</div>
-		<div class="main-nav__central-item">Mens</div>
-		</div>
-		<div id="main-nav__corner">
-		<div id="main-nav__corner__top-nav">
-			<a href="about_us.htm"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
-			<a href="help.htm"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
-			<a href="sign_in.htm"><div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div></a>
-		</div>  
-		<div id="main-nav__corner__bottom-nav">
-			<div id="main-nav__corner__bottom-nav__search-bar">
-			<input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
-			</div>
-			<div class="main-nav__corner__bottom-nav__btn">
-			<i class="far fa-heart"></i>
-			</div>
-			<div class="main-nav__corner__bottom-nav__btn">
-			<a href="shopping_cart.htm"><i class="fas fa-shopping-cart"></i></a>
-			</div>
-		</div>  
-		</div>
-	</nav>
-	</header>
+      <nav id="main-nav">
+        <div id="main-nav__logo">
+          <a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
+        </div>
+        <div id="main-nav__stretch">
+          <div class="main-nav__central-item" aria-label="womens">Womens</div>
+          <div class="main-nav__central-item active" aria-label="mens">Mens</div>
+        </div>
+        <div id="main-nav__corner">
+          <div id="main-nav__corner__top-nav">
+            <a href="about_us.htm"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
+            <a href="help.htm"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
+            <a href="sign_in.htm"><div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div></a>
+          </div>  
+          <div id="main-nav__corner__bottom-nav">
+            <div id="main-nav__corner__bottom-nav__search-bar">
+              <input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
+            </div>
+            <div class="main-nav__corner__bottom-nav__btn">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="main-nav__corner__bottom-nav__btn">
+              <a href="shopping_cart.htm"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>  
+        </div>
+        <div id="main-nav__dropdown">
+          <div class="main-nav__dropdown__col">
+            <h4>Trending</h4>
+            <ul><li>New Releases</li><li>Bestsellers</li><li>Events</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Clothing</h4>
+            <ul><li>Base Layers</li><li>Tank Tops</li><li>Bottoms</li><li>Hoodies & Jackets</li><li>Underwear</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Shoes</h4>
+            <ul><li>Life Style</li><li>Training & Gym</li><li>Running</li><li>All Shoes</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Accessories</h4>
+            <ul><li>Bags & Backpacks</li><li>Water Bottles</li><li>Equipments</li><li>Socks</li></ul>
+          </div>
+          <div id="main-nav__dropdown__arrow"></div>
+        </div>      
+      </nav>
+    </header>
 
 	<main class="std-container">
 		<nav class="breadcrumbs">
 			<a href="#" class="breadcrumbs__first-level">Mens</a>
 			<div class="breadcrumbs__separator">/</div>
-			<a href="#" class="breadcrumbs__last-level">Hoodies & Jackets</a>
+			<a href="products.htm" class="breadcrumbs__last-level">Hoodies & Jackets</a>
 		  </nav>
 
 		<div id="product-view" class="grid-container grid-col-12 extra-pad-b">
@@ -90,7 +109,7 @@
 			<div id="product-view__details" class="col-6">
 				<h3>CREST SWEETSHIRT</h3>
 
-				<div id="product-view__details__price">$55</div>
+				<div id="product-view__details__price">$59.00</div>
 				<a class="btn-action">Add to Cart</a>
 				
 				<ul id="product-view__details__specs">
@@ -147,7 +166,7 @@
 						  </div>
 						  <div class="product-card__info-block">
                 <h4>CREST SWEETSHIRT</h4>
-                <div class="product-card__info-block__price">55$</div>
+                <div class="product-card__info-block__price">59.00$</div>
 						  </div>
 						</a>
 					</div>
@@ -162,7 +181,7 @@
 						  </div>
 						  <div class="product-card__info-block">
                 <h4>CREST SWEETSHIRT</h4>
-                <div class="product-card__info-block__price">55$</div>
+                <div class="product-card__info-block__price">59.00$</div>
 						  </div>
 						</a>
 					</div>
@@ -177,7 +196,7 @@
 						  </div>
 						  <div class="product-card__info-block">
                 <h4>CREST SWEETSHIRT</h4>
-                <div class="product-card__info-block__price">55$</div>
+                <div class="product-card__info-block__price">59.00$</div>
 						  </div>
 						</a>
 					</div>

@@ -3,6 +3,8 @@
     Tested with: jQuery 3.6.0
 */
 
+"use strict";
+
 var index = 1;
 var slideCount = $("#product-view__gallery > img").length;
 
