@@ -1,4 +1,76 @@
 /* 
+    About Us Page
+*/ 
+
+#about-us__header {
+    padding-bottom: 0;
+    max-height: 85vh;
+    position: relative;
+}
+
+#about-us__header img {
+    filter: brightness(75%);  /* To make header text bit more readable */
+}
+
+#about-us__header__content {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#about-us__header__content h1 {
+    display: inline;
+    padding: .33rem 2rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--black);
+    background-color: var(--yellow);
+    text-transform: uppercase;
+}
+
+#about-us__header__content p {
+    display: inline;
+    font-size: 1.066em;
+    padding-top: 5rem;
+    color: white;
+    /* Tutorial used: https://www.w3schools.com/css/css3_shadows.asp */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.about-us__content__square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-us__content__square.colored {
+    background-color: var(--yellow);
+}
+
+.about-us__content__square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us__content__square h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.about-us__content__square p {
+    padding: 1em 2.33em;
+    text-align: center;
+}
+
+
+
+/* 
     Help Page
 */ 
 
@@ -34,15 +106,17 @@
 */ 
 
 #citations__header {
-    margin: 0;
     position: relative;
+    max-height: 80vh;
 }
 
+/* Tutorial used: https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
 #citations__header h1 {
     font-size: 4em;
     position: absolute;
-    right: 8%;
-    bottom: 40%;
+    bottom: 50%;
+    right: 8.5%;
+    transform: translateY(calc(50% + .66em));
 }
 
 #citations__content {

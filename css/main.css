@@ -265,6 +265,18 @@ a:focus {
     padding-bottom: 2em;
 }
 
+/*  Use to create responsive full bleed images, like in the "About Us", 
+or "Citations" pages */
+.full-bleed {
+    margin: 0;
+    overflow: hidden;
+}
+.full-bleed img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
 
 /* 
   Universal modifiers
