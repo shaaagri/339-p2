@@ -483,6 +483,50 @@ label.required::after {
     padding: 0 !important;
 }
 
+/* UI: Tab Control */
+
+.tab-control {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1.66em;
+}
+
+.tab-control__buttons ul {
+    margin: 0;
+    padding: 0; 
+}
+
+.tab-control__buttons li {
+    padding: 1em;
+    min-width: 10em;
+    text-align: center;
+    list-style-type: none;
+    font-weight: 600;
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+}
+
+.tab-control__buttons li:last-child {
+    border-bottom: 0;
+}
+
+.tab-control__buttons li.active {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.tab-control__buttons li:not(.active):hover,
+.tab-control__buttons li:not(.active):focus {
+    background-color: var(--yellow);
+    cursor: pointer;
+}
+
+.tab-control__content {
+    padding: 1em .33em;
+    font-size: .9em;
+    font-family: 'Droid Sans', sans-serif;
+}
+
 
 /*
   Modules: Main Navigation
@@ -606,6 +650,7 @@ label.required::after {
     top: 6rem;
     box-shadow: 4px 4px 8px 2px rgba(100,100,100,0.1);
     z-index: 100;
+    visibility: hidden;  
 }
 #main-nav__dropdown__arrow {
     width: 0;

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8" />
+
+  <head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help | CRAZYBEE</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="css/grids.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/tmp/Help.css" />
+    <link rel="stylesheet" href="css/grids.css">
+    <link rel="stylesheet" href="css/extras.css">
 
     <!-- Third-party resource: Font Awesome -->
     <script src="https://kit.fontawesome.com/5111bb54de.js" crossorigin="anonymous"></script>
+
+    <!-- Third-party resource: jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -19,8 +26,8 @@
           <a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
         </div>
         <div id="main-nav__stretch">
-          <div class="main-nav__central-item active">Womens</div>
-          <div class="main-nav__central-item">Mens</div>
+          <div class="main-nav__central-item active" aria-label="womens">Womens</div>
+          <div class="main-nav__central-item" aria-label="mens">Mens</div>
         </div>
         <div id="main-nav__corner">
           <div id="main-nav__corner__top-nav">
@@ -40,156 +47,211 @@
             </div>
           </div>  
         </div>
+        <div id="main-nav__dropdown">
+          <div class="main-nav__dropdown__col">
+            <h4>Trending</h4>
+            <ul><li>New Releases</li><li>Bestsellers</li><li>Events</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Clothing</h4>
+            <ul><li>Base Layers</li><li>Tank Tops</li><li>Bottoms</li><li>Hoodies & Jackets</li><li>Underwear</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Shoes</h4>
+            <ul><li>Life Style</li><li>Training & Gym</li><li>Running</li><li>All Shoes</li></ul>
+          </div>
+          <div class="main-nav__dropdown__col">
+            <h4>Accessories</h4>
+            <ul><li>Bags & Backpacks</li><li>Water Bottles</li><li>Equipments</li><li>Socks</li></ul>
+          </div>
+          <div id="main-nav__dropdown__arrow"></div>
+        </div>      
       </nav>
     </header>
 
+    <main class="std-container">
+      <h1>HELP</h1>
 
+      <div class="tab-control help">
+        <div class="tab-control__buttons">
+          <ul>
+            <li class="active">Orders</li>
+            <li>Delivery</li>
+            <li>Return</li>
+            <li>Payment</li>
+            <li>Exchange</li>
+            <li>Club Membership</li>
+            <li>My Account</li>
+          </ul>  
+        </div>
+        <div class="tab-control__content">
+          <!--- Orders -->
+          <div class="tab-control__tab">
+            <h4>WHY CAN'T I FIND MY ORDER IN MY ORDER HISTORY?</h4>
+            <p>It may be that you placed your order using the guest checkout option. In this 
+              case, the order is not associated with a registered account. However, you can 
+              still check the status of your online order by using <a href="#">the order 
+              tracker.</a></p>
+          </div>
 
-<div class="tabContainer">
+          <!--- Delivery -->
+          <div class="tab-control__tab">
+            <h4>WHAT SHOULD I DO IF I HAVEN'T RECEIVED MY PACKAGE?</h4>
+            <p>Due to the coronavirus's impact and the mandates in place, your order may 
+              experience a shipping delay. This delay is due to several factors, including
+              travel restrictions, available staffing, and/or federal/state/local mandates.</p>
  
-  <div class="buttonContainer"> 
- <h2>Need Help?</h2>
-<ul>
-   <li> <button onclick="showPanel(0)"> Order</button></li>
+            <ul>
+              <li>Standard shipping is 3-5 days plus an additional 1-3 days for processing. </li>
+              <li>Standard shipping of Personalized product is 3-5 days plus 2-6 days for processing.</li>
+            </ul>
+            
+            <p>If you haven’t received your package within our standard delivery times, please follow 
+              the steps below:</p>
 
-  <li><button onclick="showPanel(1)"> Delivery</button> </li>
-  <li>  <button onclick="showPanel(2)"> Return</button> </li>
-   <li> <button onclick="showPanel(3)"> Payment</button> </li>
- <li><button onclick="showPanel(4)"> Exchange</button> </li>
-<li> <button onclick="showPanel(5)"> Club Membership</button> </li>
-<li> <button onclick="showPanel(6)"> My Account</button> </li>
+            <ul>
+              <li>Make sure you check the delivery times for the product type of your order. If your order
+                contains personalized products, delivery takes 1 - 2 business days longer.</li>
+              <li>Check the delivery status of your order in the table below. It explains each stage 
+                the delivery can be in and what you can do at that stage.</li>  
+            </ul>
+          </div>
 
-</ul>
-  </div>
-<div class="contentContainer">  <!-- https://www.youtube.com/watch?v=PzSxehu4G78 -->
-
-      <div class="tabPanel"> 
-        <h4> WHY CAN'T I FIND MY ORDER IN MY ORDER HISTORY? </h4> <br>
-        <p> It may be that you placed your order using the guest checkout option. In this case, the order is not associated with a registered account. However, you can still check the status of your online order by using <a href="#"> the order tracker. </a></p>
-       </div>  
-        <div class="tabPanel"> 
-          <h4> WHAT SHOULD I DO IF I HAVEN'T RECEIVED MY PACKAGE? </h4> <br>
-           <P> Due to the coronavirus's impact and the mandates in place, your order may experience a shipping delay. This delay is due to several factors, including travel restrictions, available staffing, and/or federal/state/local mandates.</P> <br>
-
-           <li>Standard shipping is 3-5 days plus an additional 1-3 days for processing. </li>
-          <li>Standard shipping of Personalized product is 3-5 days plus 2-6 days for processing. </li> <br>
-          If you haven’t received your package within our standard delivery times, please follow the steps below.<br>
-          
-           <li>Make sure you check the delivery times for the product type of your order. If your order contains personalized products, delivery takes 1 - 2 business days longer. </li>
-           <li>Check the delivery status of your order in the table below. It explains each stage the delivery can be in and what you can do at that stage. </li>  
-        </div> 
-          <div class="tabPanel"> 
-            <h4>WHAT IS THE CRAZYBEE RETURN POLICY? </h4> <br>
+          <!--- Return  -->
+          <div class="tab-control__tab">
+            <h4>WHAT IS THE CRAZYBEE'S RETURN POLICY?</h4>
                    
-                 <p>If you are not completely satisfied with your crazybee.com order, we offer a full refund within 30 days of receipt.The following restrictions may apply. </p> <br> 
+            <p>If you are not completely satisfied with your crazybee.com order, we offer a full refund
+              within 30 days of receipt. The following restrictions may apply:</p>
+            
+            <ul>
+              <li>Any seasonal surcharges will be included in your order’s delivery total and are non-refundable. </li>
+              <li>During holiday periods the return policy may be extended to 90 days past your delivery.</li>
+              <li>Because personalized products are made just for you, they are not returnable.</li> 
+              <li>Face Covers are not eligible for returns or exchanges due to safety reasons.</li>
+              <li> Hype products such as Yeezy should be returned via the online returns portal within seven days of the 
+              delivery date.</li> 
+              <li>The product page communicates the seven-day return window during the ordering process.</li>
+            </ul> 
+          </div>
 
-                  <li>Any seasonal surcharges will be included in your order’s delivery total and are non-refundable. </li>
-
-                  <li>During holiday periods the return policy may be extended to 90 days past your delivery. 
-
-                  Because personalized products are made just for you, they are not returnable.</li> 
-
-                  <li>Face Covers are not eligible for returns or exchanges due to safety reasons. </li>
-
-                  <li> Hype products such as Yeezy should be returned via the online returns portal within seven days of the 
-                  delivery date. </li> 
-                  <li>The product page communicates the seven-day return window during the ordering process. </li> 
-
-              </div> 
-            <div class="tabPanel"> 
-              <h4> WHICH PAYMENT METHODS DO YOU ACCEPT? </h4> <br>
-              We accept the following payment methods*: 
-              <li>Visa, MasterCard, American Express, Discover </li>
-              <li> credit cards issued by banks located in these countries </li>
+          <!--- Payment -->
+          <div class="tab-control__tab">
+            <h4>WHICH PAYMENT METHODS DO YOU ACCEPT?</h4>
+            <p>We accept the following payment methods:</p>
+            <ul>
+              <li>Visa, MasterCard, American Express, Discover</li>
               <li>PayPal </li>
-              <li> Apple Pay </li>
-              <li>Affirm </li>
-              <li> Klarna</li>
-              <li> Gift Cards</li> <br>
-              <p>There's also the option to checkout with PayPal Express. It's a fast and secure way to bypass guest checkout and purchase our products online. PayPal has all of your details saved, so all it takes is an email address and password to complete your online purchase safely.</p>
-            </div> 
+              <li>Apple Pay</li>
+              <li>Affirm /li>
+              <li>Klarna</li>
+              <li>Gift Cards</li>
+            </ul>
+            <p>There's also the option to checkout with PayPal Express. It's a fast and secure way to bypass guest
+              checkout and purchase our products online. PayPal has all of your details saved, so all it takes 
+              is an email address and password to complete your online purchase safely.</p>
+          </div>
 
-            <div class="tabPanel">
+          <!--- Exchange -->
+          <div class="tab-control__tab">
+            <h4>CAN I DO AN EXCHANGE?</h4>
+            <p>We currently offer free size exchanges for a new size of the same color, if stock is available. 
+              Follow the exchange steps in the return/exchange flow and please note the following details:</p> 
 
-               <h4> CAN I DO AN EXCHANGE? </h4> <br>
-               <P> We currently offer free size exchanges for a new size of the same color, if stock is available.  Follow the exchange steps in the return/exchange flow and please note the following details: </P> <br>
+            <ul>
+              <li>A new exchange order will be created for the size you selected. Your exchange order is valid for 
+                seven days; therefore, you will need to drop the original item off at the return carrier within that 
+                timeframe*. Your exchange order will start processing once our warehouse team has processed the returned 
+                product. Please allow 1-2 days for processing time plus standard shipping timeframes. An email with your 
+                exchange order tracking will be sent once your order ships. You can also find your tracking information 
+                in your Order History.</li>
+ 
+              <li>If you do not drop your return item(s) off within seven days, your exchange order will be canceled. 
+                After this, you can still receive a refund by returning your item to the carrier. The refund will be 
+                issued once our warehouse team has processed the returned product.</li>
+ 
+              <li>To use free exchanges on Crazybee.com, the package must be sent physically from within the United States.
+                The return label is not valid through USPS for APO/FPO returns.</li>               
+            </ul>
+          </div>
 
-                <li> A new exchange order will be created for the size you selected. Your exchange order is valid for seven days; therefore, you will need to drop the original item off at the return carrier within that timeframe*. Your exchange order will start processing once our warehouse team has processed the returned product. Please allow 1-2 days for processing time plus standard shipping timeframes. An email with your exchange order tracking will be sent once your order ships. You can also find your tracking information in your Order History. </li>
+          <!--- Club Membership -->
+          <div class="tab-control__tab">
+            <h4> WHAT IS THE CLUB MEMBERSHIP?</h4>
+            <p>Welcome to the CRAZYBEE Membership program.</p>
 
-                <li> If you do not drop your return item(s) off within seven days, your exchange order will be canceled. After this, you can still receive a refund by returning your item to the carrier. The refund will be issued once our warehouse team has processed the returned product.  </li>
+            <h3>Eligiblity</h3>
+            <p>To participate in the Club, you must be at least 13 years old and a legal resident of Canada.
+              If you are at least 13, but less than 18 years old (or the age of majority in your location),
+              you must also have the consent of your parent or guardian before enrolling in the Club and your
+              parent or guardian must read and agree to these Terms.</p>
 
-                <li>To use free exchanges on Crazybee.com, the package must be sent physically from within the United States. The return label is not valid through USPS for APO/FPO returns. </li> 
-              </div>
+            <h3>Joining the Club</h3>
+            <p>If you meet the eligibility criteria above, you can join the Club by filling out a registration
+              form on www.crazybee.com, on the CrazyBee mobile app or in our retail stores. No purchase is
+              required to enroll into the Club.</p>
 
+            <h3>Earning points</h3>
+            <p>As a member of the Club, you will earn Points for purchases (except gift cards) that you make.
+              Purchases include regular and sale priced merchandise.</p>
+          </div>
 
-             <div class="tabPanel"> 
-                <h4> WHAT ARE THE CLUB MEMBERSHIP? </h4> <BR>
-                <P>Welcome to the Crazybee membership program. By participating in the Club, you agree to be bound by these Terms. </P> <br>
+          <!--- My Account -->
+          <div class="tab-control__tab">
+            <h4>HOW DO I CREATE AN ACCOUNT?</h4>
+            <p>It’s easy to create an account.</p>
 
-                <li> Eligiblity </li>
-                <p>To participate in the Club, you must be at least 13 years old and a legal resident of Canada.  If you are at least 13, but less than 18 years old (or the age of majority in your location), you must also have the consent of your parent or guardian before enrolling in the Club and your parent or guardian must read and agree to these Terms.</p> <br>
-                <li> Joing the clup </li>
-                <p>If you meet the eligibility criteria above, you can join the Club by filling out a registration form on www.adidas.com, on the adidas mobile app or in adidas retail stores. No purchase is required to enroll into the Club.</p> <br>
-                 <li> Earning points </li>
-                 <p>As a member of the Club, you will earn Points for purchases (except gift cards) that you make on www.Crazybee.com/Canada, the Cadana adidas mobile app or in adidas retail stores in Canada. Purchases include purchases of regular and sale priced merchandise. </p>
-              </div> 
+            <ul>
+              <li> The first step is to click <a href="sign_up.htm">Sign Up</a> on the top right corner of the 
+                site.</li>
+              <li>Once there you should enter your personal information. That’s your first, last name and gender.</li>
+              <li>Next, enter your email, also you need to create a password and confirm it.</li>
+              <li>Complete the process by clicking ‘Sign Up’.</li>
+              <li>Congratulations, you made your account. We’ll send you an email to confirm.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
-              <div class="tabPanel"> 
-               <h4> HOW DO I CREATE AN ACCOUNT? </h4> <br>
-               <p> It’s easy to create an account. 
+    <footer id="footer">
+      <div id="footer__nav">
+        <ul>
+          <li class="footer__col-caption">Support</li>
+          <a href="#"><li class="footer__col-item">Order Tracker</li></a>
+          <a href="#"><li class="footer__col-item">Delivery & Return</li></a>
+          <a href="#"><li class="footer__col-item">Payment Options</li></a>
+          <a href="#"><li class="footer__col-item">Club Membership</li></a>
+          <a href="#"><li class="footer__col-item">My Account</li></a>
+        </ul> 
+        <ul>
+          <li class="footer__col-caption">OUR COMPANY</li>
+          <a href="about_us.htm"><li class="footer__col-item">About Us</li></a>
+          <a href="styleguide/essentials.htm"><li class="footer__col-item">Style Guide</li></a>
+          <a href="citations.htm"><li class="footer__col-item">Citations</li></a>
+          <a href="#"><li class="footer__col-item">GitHub</li></a>
+        </ul>  
+      </div> 
+      <div id="footer__right">
+        <div id="footer__logo">
+          <a href="index.htm"><img src="img/company_logo_bw.png" alt="company logo bw"></a>
+        </div>
+        <div id="footer__social-media-links">
+          <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="footer__contacts">
+          +1 (604) 745-23-42</br>
+          ask@crazybee.com</br></br>
+          <i class="fas fa-map-marker-alt"></i><span class="fw-regular">Store Locations</span>
+        </div>
+      </div>
+    </footer>
 
-                    The first step is to click ‘Sing up’ on the top right corner of the site.
-
-                    Once there you should enter your personal information. That’s your first, last name and gender.
-
-                    Next you enter your ‘signin information’. This is your email, and you need to create a password and confirm it. 
-
-                    Complete the process by clicking ‘Sign up’.
-
-                    Congratulations, you made your account. We’ll send you an email to confirm. </p>
-                </div>
-
-</div>
-</div>
-
-<footer id="footer">
-  <div id="footer__nav">
-    <ul>
-      <li class="footer__col-caption">Support</li>
-      <a href="#"><li class="footer__col-item">Order Tracker</li></a>
-      <a href="#"><li class="footer__col-item">Delivery & Return</li></a>
-      <a href="#"><li class="footer__col-item">Payment Options</li></a>
-      <a href="#"><li class="footer__col-item">Club Membership</li></a>
-      <a href="#"><li class="footer__col-item">My Account</li></a>
-    </ul> 
-    <ul>
-      <li class="footer__col-caption">OUR COMPANY</li>
-      <a href="about_us.htm"><li class="footer__col-item">About Us</li></a>
-      <a href="styleguide/essentials.htm"><li class="footer__col-item">Style Guide</li></a>
-      <a href="citations.htm"><li class="footer__col-item">Citations</li></a>
-      <a href="#"><li class="footer__col-item">GitHub</li></a>
-    </ul>  
-  </div> 
-  <div id="footer__right">
-    <div id="footer__logo">
-      <a href="index.htm"><img src="img/company_logo_bw.png" alt="company logo bw"></a>
-    </div>
-    <div id="footer__social-media-links">
-      <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-    </div>
-    <div id="footer__contacts">
-      +1 (604) 745-23-42</br>
-      ask@crazybee.com</br></br>
-      <i class="fas fa-map-marker-alt"></i><span class="fw-regular">Store Locations</span>
-    </div>
-  </div>
-</footer>
-
-   <script src="js/tmp/helpPage.js"></script>
+    <!-- The main scripts & snippets file -->
+    <script src="js/scripts.js"></script>	 
 
   </body>
 
 </html>
-

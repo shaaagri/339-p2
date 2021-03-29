@@ -1,0 +1,30 @@
+/* 
+    Help Page
+*/ 
+
+.tab-control.help .tab-control__buttons li {
+    padding: 1.066em 2.55em;
+    font-size: 1.166em;
+}
+
+.tab-control.help .tab-control__content {
+    padding: 0 3em;
+    font-size: 1.33em;
+}
+
+.tab-control.help .tab-control__content h4 {
+    margin: 0;
+    padding-bottom: .33em;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.tab-control.help .tab-control__content ul,
+.tab-control.help .tab-control__content li {
+    font-size: .933rem !important;
+    padding-bottom: 0.5em;
+    line-height: 1.66em;
+}
+

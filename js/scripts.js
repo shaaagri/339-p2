@@ -1,11 +1,20 @@
+/*
+   header todo
+*/
+
+
 "use strict";
 
 
-/*
-   Performing neccessary setups for all ui elements
-*/
-var dropdownUnderMouse = false;
+/*              I N I T I A L I Z A T I O N            */
+/* =================================================== */
 
+
+/* 
+    performing neccessary setups for all ui components  
+*/
+
+var dropdownUnderMouse = false;
 
 /* handling the navigation bar dropdown */
 $(".main-nav__central-item").hover(
@@ -60,6 +69,33 @@ $(".accordion-title").click(function(e) {
     }
 });
 
+/* opening accordions that intended to be opened from the beginning */
+$(".accordion.active .accordion-title").trigger("click");
+
+
+/* 
+    tabs
+*/
+
+$(".tab-control__tab").hide();
+
+$(".tab-control__buttons li").click(function(e) {
+    let tabIndex = $(e.target).parent().children().index(e.target);
+     
+    $(".tab-control__tab").hide();
+
+    $(e.target).parent().parent().parent()
+        .find(".tab-control__tab").eq(tabIndex).show();
+
+    $(e.target).parent().children().removeClass('active');
+    $(e.target).addClass('active');
+});
+
+
+/* 
+    other
+*/
+
 /* handling wishlist hearts buttons */
 $('.product-card__btn-wishlist-add').click(function(e) {
     /* for product cards, wishlist hearts are inside <a></a> anchors, but 
@@ -69,14 +105,18 @@ $('.product-card__btn-wishlist-add').click(function(e) {
     $(e.target).parent().toggleClass('active');
 });
 
-/* opening accordions intended to be opened from the beginning */
-$(".accordion.active .accordion-title").trigger("click");
-
 /* handling product catalog side controls */
 $(".catalog-control .accordion-body li").click(function(e) {
     $(e.target).siblings("li").removeClass('active');
     $(e.target).addClass('active');
 });
 
-/* post-initialization */
+
+
+
+/*         P O S T - I N I T I A L I Z A T I O N       */
+/* =================================================== */
+$('#main-nav__dropdown').css('visibility', 'visible');  // to prevent dropdown's flash upon the page load
 $('#main-nav__dropdown').hide();
+
+$(".tab-control__buttons li.active" ).trigger('click');
