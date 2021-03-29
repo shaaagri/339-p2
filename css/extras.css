@@ -49,6 +49,6 @@
     margin: auto;
     padding: 3rem 0;
     padding-bottom: 10rem;
-    width: 60%;
+    width: clamp(50rem, 20vw, 50rem);
 }
 
