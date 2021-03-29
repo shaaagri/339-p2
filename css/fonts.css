@@ -1,0 +1,15 @@
+/* 
+  Custom fonts definitions
+*/
+
+
+/*  Web  */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;900&display=swap');
+
+/*  Local  */
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/DroidSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grids.css">
+    <link rel="stylesheet" href="../css/styleguide.css">
+
+    <title>Design System | CRAZYBEE</title>
+  </head>
+
+  <body class="sg"> <!-- "sg" means "styleguide" -->
+
+    <div id="sg-container">  
+
+      <!-- Top navigation -->
+      <nav id="sg-nav">
+        <a class="sg-nav__button sg-nav__button--active">Design System</a>
+        <a class="sg-nav__button" href="wireframes.htm">Wireframes</a>
+        <a class="sg-nav__button" href="citations.htm">Citations</a>
+      </nav> 
+      
+      <!-- Left-side navigation -->
+      <aside id="sg-sidebar">
+        <ul>
+          <li class="sg-sidebar__section-caption">Essentials</li>
+          <a href="#sg-content__colors"><li class="sg-sidebar__item">Colors</li></a>
+          <a href="#sg-content__typography"><li class="sg-sidebar__item">Typography</li></a>
+          <a href="#sg-content__lists"><li class="sg-sidebar__item">Lists</li></a>
+          <a href="#sg-content__grids"><li class="sg-sidebar__item">Grids</li></a>
+          <a href="#sg-content__misc"><li class="sg-sidebar__item">Misc</li></a>
+          <a href="#sg-content__conventions"><li class="sg-sidebar__item">Conventions</li></a>
+
+          <li class="sg-sidebar__spacer"></li>
+
+          <a href="ui_elements.htm" class="sg-sidebar__section-link"><li>UI Elements</li></a>
+          <a href="modules.htm" class="sg-sidebar__section-link"><li>Modules</li></a>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <div id="sg-content">
+        <section class="no-pad">
+          <h1>Crazybee Design System</h1>
+
+          <p>The core principles behind our design system are <em>lightweightness</em>, 
+            <em>flexibility</em>, <em>unambiguity</em>, and <em>ease of use</em>. It is
+            meant to support our company's business goals and communicate its brand 
+            identity, being easily adaptable to any new conditions as neccessary, just
+            like the company itself.</p>
+        </section>
+        
+        <!--- Begin of section: Essentials -->
+        <section> 
+          <h1>Essentials</h1>
+       
+          <!--- Begin of section: Colors -->
+          <section id="sg-content__colors"> 
+              <h2>Colors</h2>
+              <hr>
+              <p>The color palette is restricted, but vibrant. Yellow and black serve
+              as main branding visual conductors. All the rest of colors are produced 
+              as their shades.
+              </p>
+  
+              <div class="sg-content__color-swatches">
+                <div class="sg-content__color-swatch sg-content__color-swatch--black">
+                  <div class="sg-content__color-swatch-colorbox"></div>
+                  <div class="sg-content__color-swatch-hexcode">#0E0D0B</div>  
+                  <div class="sg-css-class">.clr-black</div>
+                </div>
+  
+                <div class="sg-content__color-swatch sg-content__color-swatch--yellow">
+                  <div class="sg-content__color-swatch-colorbox"></div>
+                  <div class="sg-content__color-swatch-hexcode">#FFE500</div>  
+                  <div class="sg-css-class">.clr-yellow</div>
+                </div>
+  
+                <div class="sg-content__color-swatch sg-content__color-swatch--gray">
+                  <div class="sg-content__color-swatch-colorbox"></div>
+                  <div class="sg-content__color-swatch-hexcode">#3F4047</div>  
+                  <div class="sg-css-class">.clr-gray</div>
+                </div>
+  
+                <div class="sg-content__color-swatch sg-content__color-swatch--lgray">
+                  <div class="sg-content__color-swatch-colorbox"></div>
+                  <div class="sg-content__color-swatch-hexcode">#DCDCDB</div>  
+                  <div class="sg-css-class">.clr-lgray</div>
+                </div>
+  
+                <div class="sg-content__color-swatch sg-content__color-swatch--white">
+                  <div class="sg-content__color-swatch-colorbox"></div>
+                  <div class="sg-content__color-swatch-hexcode">#FFFFFF</div>  
+                  <div class="sg-css-class">.clr-white</div>
+                </div>
+              </div>
+          </section>
+          <!--- End of section: Colors -->
+        
+          <!--- Begin of section: Typography -->
+          <section id="sg-content__typography">
+            <h2>Typography</h2>
+            <hr>
+            
+            <section class="grid-container grid-col-12 grid-no-row-gap fw-light clr-gray">
+                <div class="heading fsz-xlarge col-6">Titilium Web as the primary typeface.</div>
+                <div class="heading copy-font fsz-large col-6">Droid Sans as the body copy typeface.</div> 
+                <div class="fsz-med col-6">ABCDEFGHIJKLMNOPQRSW UVWXYZ</br>abcdefghijklmnopqrstuvwxyz</br>0123456789</div>
+                <div class="copy fsz-med col-6">ABCDEFGHIJKLMNOPQRSWUVWXYZ</br>abcdefghijklmnopqrstuvwxyz</br>0123456789</div>
+            </section>
+              
+            <section class="grid-container grid-col-12 grid-no-gap clr-gray"> 
+              <div class="col-12">
+                <h3>Font Weights</h3>
+              </div>
+            
+              <div class="col-3">
+                <div class="fsz-med fw-light">Light</div>
+                <div class="sg-css-class">.fw-light</div>
+              </div>
+
+              <div class="col-3">
+                <div class="fsz-med fw-regular">Regular</div>
+                <div class="sg-css-class">.fw-regular</div>
+              </div>
+
+              <div class="col-3">
+                <div class="fsz-med fw-bold">Bold</div>
+                <div class="sg-css-class">.fw-bold</div>
+              </div>
+
+              <div class="col-3">
+                <div class="fsz-med fw-black">Black</div>
+                <div class="sg-css-class">.fw-black</div>
+              </div>
+            </section>
+
+            <section>
+              <h3>Font Sizes</h3>
+
+              <div class="fw-light">
+                <div class="fsz-small fw-light">Small standard font size</div>
+                <div class="sg-css-class">.fsz-small</div>
+
+                <div class="fsz-med fw-light extra-pad-t">Medium standard font size</div>
+                <div class="sg-css-class">.fsz-med</div>
+
+                <div class="fsz-large fw-light extra-pad-t">Large standard font size</div>
+                <div class="sg-css-class">.fsz-large</div>
+
+                <div class="fsz-xlarge fw-light extra-pad-t">Extra large standard font size</div>
+                <div class="sg-css-class">.fsz-xlarge</div>
+              </div>
+            </section>
+
+            <section>
+              <h3>Headings</h3>
+
+              <div class="clr-gray">
+                <span class="h1">Heading Level 1</span>
+                <code class="sg-code"><pre>&lt;h1&gt;Heading Level 1&lt;/h1&gt;
+&lt;span class=&quot;h1&quot;&gt;Heading Level 1&lt;/span&gt;</pre></code>
+
+                <span class="h2">Heading Level 2</span>
+                <code class="sg-code"><pre>&lt;h2&gt;Heading Level 2&lt;/h2&gt;
+&lt;span class=&quot;h2&quot;&gt;Heading Level 2&lt;/span&gt;</pre></code>
+
+                <span class="h3 extra-pad-t">Heading Level 3</span>
+                <code class="sg-code"><pre>&lt;h3&gt;Heading Level 3&lt;/h3&gt;
+&lt;span class=&quot;h3&quot;&gt;Heading Level 3&lt;/span&gt;</pre></code>
+              </div>    
+            </section>
+
+            <section class="no-pad">
+              <h3>Paragraphs</h3>
+              <div class="clr-gray">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus dui, 
+                  vitae malesuada arcu. Morbi neque eros, aliquam in tempus a, fermentum vitae 
+                  orci. Phasellus aliquam sem in diam finibus faucibus. Aenean euismod ex leo, 
+                  vel sollicitudin mi tincidunt eget. Vestibulum vel tristique enim. Suspendisse 
+                  potenti. Vivamus condimentum pulvinar quam eu ullamcorper. Praesent at 
+                  consectetur odio, non pharetra ex. Nam odio sapien, sagittis eu mauris quis, 
+                  eleifend pretium lorem. Sed condimentum euismod metus, at sodales ante 
+                  laoreet ac.</p>
+              </div>    
+              <code class="sg-code"><pre>&lt;p&gt;Paragraph content&lt;/p&gt;</pre></code> 
+            </section>
+          </section>
+          <!--- End of section: Typography -->
+
+          <!--- Begin of section: Lists -->
+          <section id="sg-content__lists">
+            <h2>Lists</h2>
+            <hr>
+
+            <div class="grid-container grid-col-12">
+              <div class="col-6">
+                <h3>Bulleted Lists</h3>
+                <div class="no-pad">
+                  <ul>
+                    <li>Level 1</li>
+                    <li>Level 1</li>
+                    <ul>
+                      <li>Level 2</li>
+                      <ul>
+                        <li>Level 3</li>
+                      </ul>
+                    </ul>
+                  </ul>
+  
+                  <code class="sg-code"><pre>&lt;ul&gt;
+  &lt;li&gt;Level 1&lt;/li&gt;
+  &lt;li&gt;Level 1&lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Level 2&lt;/li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Level 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;</pre></code>
+                </div>
+              </div>
+            
+              <div class="col-6">
+                <h3>Numbered Lists</h3>
+                <div class="no-pad">
+                  <ol>
+                    <li>Level 1</li>
+                    <li>Level 1</li>
+                    <ol>
+                      <li>Level 2</li>
+                      <ol>
+                        <li>Level 3</li>
+                      </ol>
+                    </ol>
+                  </ol>
+  
+                  <code class="sg-code"><pre>&lt;ol&gt;
+  &lt;li&gt;Level 1&lt;/li&gt;
+  &lt;li&gt;Level 1&lt;/li&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Level 2&lt;/li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Level 3&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/ol&gt;
+&lt;/ol&gt;</pre></code>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!--- End of section: Lists -->
+
+          <!--- Begin of section: Grids -->
+          <section id="sg-content__grids">
+            <h2>Grids</h2>
+            <hr>
+            
+            <section>
+              <p>Any page element can be told to be a grid simply by applying <span class="sg-css-class inline">.grid-container</span> class.
+                By default, the gutter equals <em>1em</em>. Gutters can be removed throughout, or between cols and rows only by applying
+                additional <span class="sg-css-class inline">.grid-no-gap</span> , <span class="sg-css-class inline">.grid-no-row-gap</span> ,
+                <span class="sg-css-class inline">.grid-no-col-gap</span> classes.</p>
+
+              <p>Elements within a grid should use <span class="sg-css-class inline">.col-2</span> , <span class="sg-css-class inline">.col-3</span> , 
+                <span class="sg-css-class inline">.col-4</span> , <span class="sg-css-class inline">.col-6</span> , <span class="sg-css-class inline">.col-9</span> 
+                classes to specify their width, otherwise they will be given default width according to the grid type. Elements can be set to start from 
+                an arbitrary column by using <span class="sg-css-class inline">.start-col-*</span> classes, such as
+                <span class="sg-css-class inline">.start-col-2</span> or <span class="sg-css-class inline">.start-col-12</span>.
+              </p>
+            </section>
+
+            <section>
+              <h3>12-Column Grid</h3>
+              <p>The default grid layout, which should be enough most of the time. To use, add 
+                <span class="sg-css-class inline">.grid-col-12</span> class to the grid container.</p>
+
+              <div class="grid-container grid-col-12 sg-grid-demo long">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+              </div>
+            </section>
+
+            <section>
+              <h3>Grids in Use</h3>
+              
+              <div class="grid-container grid-col-12 sg-grid-demo">
+                <div class="col-3 bg-purple"><span>col-3</span></div>
+                <div class="col-9 bg-green"><span>col-9</span></div>
+              </div>
+
+              <div class="grid-container grid-col-12 sg-grid-demo">
+                <div class="col-6 bg-purple"><span>col-6</span></div>
+                <div class="col-3 bg-green"><span>col-3</span></div>
+                <div class="col-3 bg-crimson"><span>col-3</span></div>
+              </div>
+
+              <div class="grid-container grid-col-12 sg-grid-demo">
+                <div class="col-4 start-col-3 bg-purple"><span>col-4 start-col-3</span></div>
+                <div class="col-3 start-col-10 bg-green"><span>col-3 start-col-10</span></div>
+              </div>
+            </section>
+           
+          </section>
+          <!--- End of section: Grids -->
+
+          <!--- Begin of section: Misc -->
+          <section id="sg-content__misc">
+            <h2>Misc</h2>
+            <hr>
+
+            <p>There is also a handful of additional general-purpose CSS classes that may be sometimes helpful to you.</p>
+
+            <table class="copy-font">
+              <tbody>
+                <tr>
+                  <td><span class="sg-css-class inline">.no-pad</span></td>
+                  <td>removes all padding from the element</td>
+                </tr>
+                <tr>
+                  <td><span class="sg-css-class inline">.no-pad-b</span></td>
+                  <td>removes just the bottom padding</td>
+                </tr>
+                <tr>
+                  <td><span class="sg-css-class inline">.extra-pad-t</span></td>
+                  <td>adds more padding to the top</td>
+                </tr>
+                <tr>
+                  <td><span class="sg-css-class inline">.extra-marg-t</span></td>
+                  <td>adds more margin to the top</td>
+                </tr>
+                <tr>
+                  <td><span class="sg-css-class inline">.text-center</span></td>
+                  <td>sets text alignment to centered</td>
+                </tr>
+              </tbody>
+            </table> 
+
+            <p class="no-pad-b">Look into <em>main.css</em> to learn about other modifiers that might have been missed in this documentation.
+            </p>
+
+          </section>
+          <!--- End of section: Misc -->
+
+          <!--- Begin of section: Conventions -->
+          <section id="sg-content__conventions">
+            <h2>Conventions</h2>
+            <hr>
+ 
+            <h3>Naming</h3>
+            <p>All classes and identifiers should be lowercase and use hyphens as word separators. When naming new elements,
+              try to be as concise as possible, but in the same time make sure it is clear what's the element's purpose. 
+              Related names should be clustered, starting with the same prefix. For example:
+            </p>
+
+            <p class="extra-pad-l"><strong>.nav-bar</strong> , <strong>.nav-logo</strong></p>
+            
+            <p>For general styling you should stick to the BEM <em>(Block-Element-Modifier)</em> methodology. More about it can 
+              be read here: <a href="https://css-tricks.com/bem-101/">BEM 101</a>.</p>
+
+            <h3 class="extra-pad-t">File Structure</h3>
+            <p>Try to name folders as short as possible, with as little nesting levels as possible. Suggested example:
+            </p>
+
+            <figure id="sg-file-structure">
+              <img src="../img/styleguide/file_structure.png">
+            </figure>
+
+            <p>All folder and file names must be <em>lowercase</em>, always. This is for the sake of compatibility between
+              our design workstations and the server (Linux) where the site actually lives.</p>
+          </section>
+          <!--- End of section: Conventions -->
+
+        </section>
+        <!--- End of section: Essentials -->
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

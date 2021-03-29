@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/grids.css" />
+    <link rel="stylesheet" href="css/products.css" />
+
+    <title>Product Details | CRAZYBEE</title>
+
+    <!-- Third-party resource: Font Awesome -->
+    <script src="https://kit.fontawesome.com/5111bb54de.js" crossorigin="anonymous"></script>
+
+    <!-- Third-party resource: jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div id="main-nav__logo">
+          <a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
+        </div>
+        <div id="main-nav__stretch">
+          <div class="main-nav__central-item active">Womens</div>
+          <div class="main-nav__central-item">Mens</div>
+        </div>
+        <div id="main-nav__corner">
+          <div id="main-nav__corner__top-nav">
+            <a href="about_us.htm"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
+            <a href="help.htm"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
+            <a href="sign_in.htm"><div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div></a>
+          </div>  
+          <div id="main-nav__corner__bottom-nav">
+            <div id="main-nav__corner__bottom-nav__search-bar">
+              <input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
+            </div>
+            <div class="main-nav__corner__bottom-nav__btn">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="main-nav__corner__bottom-nav__btn">
+              <a href="shopping_cart.htm"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>  
+        </div>
+      </nav>
+    </header>
+
+      <main class="products-container">
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__first-level">Mens</a>
+          <div class="breadcrumbs__separator">/</div>
+          <a href="#" class="breadcrumbs__last-level">Hoodies & Jackets</a>
+        </nav>
+  
+        <div id="product-catalog">
+          <aside id="product-catalog__controls">
+            <div class="catalog-control accordion extra-pad-b active">
+              <div class="accordion-title">Sort by</div>
+              <div class="accordion-body">
+                <ul>
+                  <li>Recent</li>
+                  <li class="active">Best Price</li>
+                  <li>Best Rating</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-control accordion extra-pad-b active">
+              <div class="accordion-title">Size</div>
+              <div class="accordion-body">
+                <ul>
+                  <li>S</li>
+                  <li>M</li>
+                  <li class="active">L</li>
+                  <li>XL</li>
+                  <li>XXL</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="catalog-control accordion extra-pad-b">
+              <div class="accordion-title">Colors</div>
+              <div class="accordion-body"><!-- todo: Colors Checkboxes --></div>
+            </div>
+          </aside>
+  
+          <div id="product-catalog__list">
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_orange.jpg" alt="Front view of the man wearing the orange hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+      
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_green.jpg" alt="Front view of the man wearing the green hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_black.jpg" alt="Front view of the man wearing the black hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_white.jpg" alt="Front view of the man wearing the mens_hoodies_white hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_handsome_black.jpg" alt="Front view of the man wearing the black hoodie">	  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_dark_blue.jpg" alt="Front view of the man wearing the dark blue hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_light_blue.jpg" alt="Front view of the man wearing the light blue hoodie">		  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_red.jpg" alt="Front view of the man wearing the red hoodie">	  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="product-card">
+              <a href="product_details.htm">
+                <img src="img/products/mens_hoodies_grey_white.jpg" alt="Front view of the man wearing the grey hoodie">	  
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">$55</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <footer id="footer">
+      <div id="footer__nav">
+        <ul>
+          <li class="footer__col-caption">Support</li>
+          <a href="#"><li class="footer__col-item">Order Tracker</li></a>
+          <a href="#"><li class="footer__col-item">Delivery & Return</li></a>
+          <a href="#"><li class="footer__col-item">Payment Options</li></a>
+          <a href="#"><li class="footer__col-item">Club Membership</li></a>
+          <a href="#"><li class="footer__col-item">My Account</li></a>
+        </ul> 
+        <ul>
+          <li class="footer__col-caption">OUR COMPANY</li>
+          <a href="about_us.htm"><li class="footer__col-item">About Us</li></a>
+          <a href="styleguide/essentials.htm"><li class="footer__col-item">Style Guide</li></a>
+          <a href="citations.htm"><li class="footer__col-item">Citations</li></a>
+          <a href="#"><li class="footer__col-item">GitHub</li></a>
+        </ul>  
+      </div> 
+      <div id="footer__right">
+        <div id="footer__logo">
+          <a href="index.htm"><img src="img/company_logo_bw.png" alt="company logo bw"></a>
+        </div>
+        <div id="footer__social-media-links">
+          <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="footer__contacts">
+          +1 (604) 745-23-42</br>
+          ask@crazybee.com</br></br>
+          <i class="fas fa-map-marker-alt"></i><span class="fw-regular">Store Locations</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Including the main scripts and snippets file -->
+    <script src="js/scripts.js"></script>	  
+  </body>
+
+</html>

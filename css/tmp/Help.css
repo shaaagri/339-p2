@@ -1,0 +1,34 @@
+.tabContainer{  /*https://www.youtube.com/watch?v=PzSxehu4G78*/
+
+  display:flex;
+  justify-content:center;
+align-items:center;
+ padding:1.5em;
+}
+.tabContainer .buttonContainer button{
+border:none;
+background:none;
+
+}
+.tabContainer .buttonContainer h2{
+ text-transform: uppercase;
+  text-align:center;
+ margin-bottom: 30px;
+}
+
+.tabContainer .buttonContainer ul li{
+text-align:center;
+  padding:15px;
+  border-top:1px solid rgba(0,0,0,0.05);
+   border:1px solid rgba(0,0,0,0.05);
+   list-style-type: none;
+   /*border-top:1px solid rgba(255,255,255,0.05);*/
+}
+
+.tabContainer .buttonContainer  ul  :hover{
+  background: yellow;
+}
+.tabContainer .contentContainer {
+padding:75px;
+
+}

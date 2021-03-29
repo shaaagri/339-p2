@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grids.css">
+    <link rel="stylesheet" href="../css/styleguide.css">
+
+    <title>Design System | CRAZYBEE</title>
+
+    <!-- Third-party resource: Font Awesome -->
+    <script src="https://kit.fontawesome.com/5111bb54de.js" crossorigin="anonymous"></script>
+
+    <!-- Third-party resource: jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <!-- sg = styleguide -->
+  <body class="sg">  
+
+    <div id="sg-container">  
+
+      <nav id="sg-nav">
+        <a class="sg-nav__button sg-nav__button--active">Design System</a>
+        <a class="sg-nav__button" href="wireframes.htm">Wireframes</a>
+        <a class="sg-nav__button" href="citations.htm">Citations</a>
+      </nav> 
+      
+      <aside id="sg-sidebar">
+        <ul>
+          <a href="essentials.htm" class="sg-sidebar__section-link"><li>Essentials</li></a>
+
+          <li class="sg-sidebar__spacer"></li>
+
+          <li class="sg-sidebar__section-caption">UI Elements</li>
+          <a href="#sg-content__links"><li class="sg-sidebar__item">Links</li></a>
+          <a href="#sg-content__buttons"><li class="sg-sidebar__item">Buttons</li></a>
+          <a href="#sg-content__forms"><li class="sg-sidebar__item">Forms</li></a>
+          <a href="#sg-content__space-organizers"><li class="sg-sidebar__item">Space Organizers</li></a>
+
+          <li class="sg-sidebar__spacer"></li>
+   
+          <a href="modules.htm" class="sg-sidebar__section-link"><li>Modules</li></a>
+        </ul>
+      </aside>
+
+      <div id="sg-content">
+        <section class="no-pad">
+          <h1>UI Elements</h1>
+
+          <p>This section of the design guide covers basic interactive elements, such as in-text links, buttons and text inputs.</p>
+        </section>
+
+        <!--- Begin of section: Links -->
+        <section id="sg-content__links">
+          <h2>Links</h2>
+          <hr>
+
+          <div class="grid-container grid-col-12">
+            <div class="col-6">
+              <div>
+                <a href="#sg-content__links">Default in-text link style</a>
+                <p class="no-pad">For use in secondary navigation and within articles' text.</p>
+              </div>
+
+              <code class="sg-code"><pre>&lt;a href=&quot;#&quot;&gt;I lead nowhere&lt;/a&gt;</pre></code>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <a href="#sg-content__links" class="link-alt">Alternative in-text link style</a>
+                <p class="no-pad">For use within forms and other more functional elements.</p>
+              </div>
+      
+              <code class="sg-code"><pre>&lt;a href=&quot;#&quot; class=&quot;link-alt&quot;&gt;I lead nowhere&lt;/a&gt;</pre></code>
+            </div>
+          </div>
+        </section>
+        <!--- End of section: Links -->
+
+        <!--- Begin of section: Buttons -->
+        <section id="sg-content__buttons">
+          <h2>Buttons</h2>
+          <hr>
+          <p>Click and hover to see the interactions.</p>
+
+          <div class="grid-container grid-col-12 extra-pad-t">      
+            <div class="col-6 extra-pad-t extra-pad-b">
+              <a href="javascript:void(0)" class="btn-action">Action Button</a>
+              <p class="extra-marg-t extra-pad-t">Primary CTA button.</p>
+
+              <code class="sg-code"><pre>&lt;a class=&quot;btn-action&quot;&gt;Action Button&lt;/a&gt;</pre></code>
+            </div>
+
+            <div class="col-6 extra-pad-t extra-pad-b">
+              <a href="javascript:void(0)" class="btn-default">Default Button</a>
+              <p class="extra-marg-t extra-pad-t">General-purpose button.</p>
+
+              <code class="sg-code"><pre>&lt;a class=&quot;btn-default&quot;&gt;Default Button&lt;/a&gt;</pre></code>
+            </div>
+
+            <div class="col-6 extra-pad-t extra-marg-t">
+              <a href="javascript:void(0)" class="btn-special">Special Button</a>
+              <p class="extra-marg-t extra-pad-t">A decorated button for promotions and</br>other cases where the action needs some underscoring.</p>
+
+              <code class="sg-code"><pre>&lt;a class=&quot;btn-special&quot;&gt;Special Button&lt;/a&gt;</pre></code>
+            </div>
+
+            <div class="col-6 extra-pad-t extra-marg-t">
+              <a href="javascript:void(0)" class="btn-ghost">Ghost Button</a>
+              <p class="extra-marg-t extra-pad-t">Can be used instead of the default button.</p>
+
+              <code class="sg-code"><pre>&lt;a class=&quot;btn-ghost&quot;&gt;Ghost Button&lt;/a&gt;</pre></code>
+            </div>
+          </div>
+        </section>
+        <!--- End of section: Buttons -->
+
+        <!--- Begin of section: Forms -->
+        <section id="sg-content__forms">
+          <h2>Forms</h2>
+          <hr>
+
+          <section> 
+            <h3>Text Inputs</h3>
+
+            <div class="grid-container grid-col-12">
+              <div class="col-6 extra-pad-r">
+                <label for="demo-text-input" class="extra-pad-t top">Label</label>
+                <input class="inp-text" type="text" name="demo-text-input" placeholder="Placeholder Text"><br><br>
+    
+                <code class="sg-code"><pre>&lt;label for=&quot;text-input&quot; class=&quot;top&quot;&gt;Label&lt;/label&gt;
+&lt;input class=&quot;inp-text&quot; type=&quot;text&quot; name=&quot;text-input&quot; placeholder=&quot;Placeholder Text&quot;&gt;</pre></code>  
+              </div>
+
+              <div class="col-6">
+                <label for="demo-text-input-2" class="extra-pad-t top required">Label for a Required Input</label>
+                <input class="inp-text" type="text" name="demo-text-input-2" placeholder="Placeholder Text"></br><br>
+    
+                <code class="sg-code"><pre>&lt;label for=&quot;text-input&quot; class=&quot;top required&quot;&gt;Label for a Required Input&lt;/label&gt;
+&lt;input class=&quot;inp-text&quot; type=&quot;text&quot; name=&quot;text-input&quot; placeholder=&quot;Placeholder Text&quot;&gt;</pre></code>   
+              </div>
+
+              <div class="col-12 extra-pad-t">
+                <label for="demo-text-input-3" class="top">Password</label>
+                <input class="inp-text" type="password" name="demo-text-input-3" placeholder="Placeholder Text"><i class="fas fa-eye inp-text__password-toggle"></i><br><br>
+                
+                <code class="sg-code"><pre>&lt;label for=&quot;text-input&quot; class=&quot;top&quot;&gt;Password&lt;/label&gt;
+&lt;input class=&quot;inp-text&quot; type=&quot;password&quot; name=&quot;text-input&quot; placeholder=&quot;Placeholder Text&quot;&gt;&lt;i class=&quot;fas fa-eye inp-text__password-toggle&quot;&gt;</pre></code>   
+              </div>
+            </div> 
+          </section>
+
+          <section>
+            <h3>Dropdowns</h3>
+              <label for="demo-dropdown" class="top extra-pad-t">Label</label>
+              <select class="inp-dropdown" name="demo-dropdown" id="demo-dropdown">
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+              </select><br><br>
+    
+              <code class="sg-code"><pre>&lt;label for=&quot;dropdown&quot; class=&quot;top&quot;&gt;Label&lt;/label&gt;
+&lt;select class=&quot;inp-dropdown&quot; name=&quot;dropdown&quot; id=&quot;dropdown&quot;&gt;
+  &lt;option value=&quot;option-1&quot;&gt;Option 1&lt;/option&gt;
+  &lt;option value=&quot;option-2&quot;&gt;Option 2&lt;/option&gt;
+  &lt;option value=&quot;option-3&quot;&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;</pre></code>  
+          </section>
+
+          <section>
+            <h3>Checkboxes</h3>
+
+            <input type="checkbox" name="demo-checkbox" id="demo-checkbox" class="inp-checkbox extra-marg-t">
+            <label for="demo-checkbox" class="label-checkbox">I agree with terms and conditions</label>
+
+            <code class="sg-code extra-marg-t"><pre>&lt;input type=&quot;checkbox&quot; name=&quot;demo-checkbox&quot; id=&quot;demo-checkbox&quot; class=&quot;inp-checkbox&quot;&gt;
+&lt;label for=&quot;demo-checkbox&quot; class=&quot;label-checkbox&quot;&gt;I agree with terms and conditions&lt;/label&gt;</pre></code>  
+          </section>
+
+          <section>
+            <h3>Radio Buttons</h3>
+
+            <input type="radio" id="male" name="gender" value="male" class="extra-marg-t">
+            <label for="male" class="label-radio">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="label-radio">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other" class="label-radio">Others</label>
+            </br>
+
+            <code class="sg-code extra-marg-t"><pre>&lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;
+  &lt;label for=&quot;male&quot; class=&quot;label-radio&quot;&gt;Male&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;
+  &lt;label for=&quot;female&quot; class=&quot;label-radio&quot;&gt;Female&lt;/label&gt;
+  &lt;input type=&quot;radio&quot; id=&quot;other&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt;
+  &lt;label for=&quot;other&quot; class=&quot;label-radio&quot;&gt;Others&lt;/label&gt;</pre></code>  
+          </section>
+        </section>
+        <!--- End of section: Forms -->
+
+        <!--- Begin of section: Space Organizers -->
+        <section id="sg-content__space-organizers">
+          <h2>Space Organizers</h2>
+          <hr>
+          <p>Here we list UI elements that allow the designer to use the page space more wisely - for example, adding expandable sections.</p>
+
+          <section>
+            <h3>Accordions</h3>
+
+            <div class="grid-container grid-col-12">
+              <div class="col-6">
+                <div class="accordion extra-pad-b">
+                  <div class="accordion-title">Click to see more</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et turpis tincidunt blandit.
+                      Etiam eleifend at lectus id cursus. Duis id quam felis. Donec non volutpat nisl.</p>
+                  </div>
+                </div>
+  
+                <code class="sg-code extra-marg-t"><pre>&lt;div class=&quot;accordion&quot;&gt;
+  &lt;div class=&quot;accordion-title&quot;&gt;Click to see more&lt;/div&gt;
+  &lt;div class=&quot;accordion-body&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis et turpis tincidunt blandit.
+      Etiam eleifend at lectus id cursus. Duis id quam felis. Donec non volutpat nisl.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre></code>
+              </div>
+            </div>
+          
+        </section>
+        <!--- End of section: Space Organizers -->   
+      </div>
+
+    </div>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+
+</html>

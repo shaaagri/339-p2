@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/grids.css">
+    <link rel="stylesheet" href="../css/styleguide.css">
+    <link rel="stylesheet" href="../css/products.css">
+
+    <title>Design System | CRAZYBEE</title>
+
+    <!-- Third-party resource: Font Awesome -->
+    <script src="https://kit.fontawesome.com/5111bb54de.js" crossorigin="anonymous"></script>
+
+    <!-- Third-party resource: jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body class="sg"> <!-- "sg" means "styleguide" -->
+
+    <div id="sg-container">  
+
+      <!-- Top navigation -->
+      <nav id="sg-nav">
+        <a class="sg-nav__button sg-nav__button--active">Design System</a>
+        <a class="sg-nav__button" href="wireframes.htm">Wireframes</a>
+        <a class="sg-nav__button" href="citations.htm">Citations</a>
+      </nav> 
+      
+      <!-- Left-side navigation -->
+      <aside id="sg-sidebar">
+        <ul>
+          <a href="essentials.htm" class="sg-sidebar__section-link"><li>Essentials</li></a>
+
+          <li class="sg-sidebar__spacer"></li>
+
+          <a href="ui_elements.htm" class="sg-sidebar__section-link"><li>UI Elements</li></a>
+
+          <li class="sg-sidebar__spacer"></li>
+
+          <li class="sg-sidebar__section-caption">Modules</li>
+          <a href="#sg-content__navigaton-bar"><li class="sg-sidebar__item">Navigation Bar</li></a>
+          <a href="#sg-content__footer"><li class="sg-sidebar__item">Footer</li></a>
+          <a href="#sg-content__breadcrumbs"><li class="sg-sidebar__item">Breadcrumbs</li></a>
+          <a href="#sg-content__single-product-view"><li class="sg-sidebar__item">Single Product View</li></a>
+          <a href="#sg-content__product-card"><li class="sg-sidebar__item">Product Card</li></a>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main id="sg-content">
+        <section class="no-pad">
+          <h1>Modules</h1>
+
+          <p>This section of the design guide covers regularly occuring compound parts of the website, such as header and footer. Click and hover to see the interactions, resize the browser window to test the responsiveness.</p>
+        </section>
+        
+        <!--- Begin of section: Navigation Bar -->
+        <section id="sg-content__navigaton-bar">
+          <h2>Navigation Bar</h2>
+          <hr>
+        
+          <div class="extra-pad-b">
+            <p>The main navigation module to be placed at the top of every page.</p>
+
+            <header>
+              <nav id="main-nav" class="demo"> 
+ 
+                <div id="main-nav__logo">
+                  <a href="index.htm"><img src="../img/company_logo.png" alt="company logo"></a>
+                </div>
+
+                <div id="main-nav__stretch">
+                  <div class="main-nav__central-item active">Womens</div>
+                  <div class="main-nav__central-item">Mens</div>
+                </div>
+
+                <div id="main-nav__corner">
+                  <div id="main-nav__corner__top-nav">
+                    <div class="main-nav__corner__top-nav__btn">ABOUT US</div>
+                    <div class="main-nav__corner__top-nav__btn">HELP</div>
+                    <div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div>
+                  </div>  
+
+                  <div id="main-nav__corner__bottom-nav">
+                    <div id="main-nav__corner__bottom-nav__search-bar">
+                      <input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="main-nav__corner__bottom-nav__btn">
+                      <i class="far fa-heart"></i>
+                    </div>
+                    <div class="main-nav__corner__bottom-nav__btn">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                  </div>  
+
+                </div>
+
+              </nav>
+            </header>
+          </div>
+
+          <code class="sg-code extra-marg-t"><pre>&lt;header&gt;
+  &lt;nav id=&quot;main-nav&quot;&gt;
+    &lt;div id=&quot;main-nav__logo&quot;&gt;
+      &lt;a href=&quot;index.htm&quot;&gt;&lt;img src=&quot;img/company_logo.png&quot; alt=&quot;company logo&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;main-nav__stretch&quot;&gt;
+      &lt;div class=&quot;main-nav__central-item active&quot;&gt;Womens&lt;/div&gt;
+      &lt;div class=&quot;main-nav__central-item&quot;&gt;Mens&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;main-nav__corner&quot;&gt;
+      &lt;div id=&quot;main-nav__corner__top-nav&quot;&gt;
+        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;ABOUT US&lt;/div&gt;
+        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;HELP&lt;/div&gt;
+        &lt;div class=&quot;main-nav__corner__top-nav__btn&quot;&gt;&lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;Username&lt;/div&gt;
+      &lt;/div&gt;  
+      &lt;div id=&quot;main-nav__corner__bottom-nav&quot;&gt;
+        &lt;div id=&quot;main-nav__corner__bottom-nav__search-bar&quot;&gt;
+          &lt;input class=&quot;inp-text&quot; type=&quot;text&quot; name=&quot;search-bar&quot; placeholder=&quot;SEARCH&quot;&gt;&lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;main-nav__corner__bottom-nav__btn&quot;&gt;
+          &lt;i class=&quot;far fa-heart&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;main-nav__corner__bottom-nav__btn&quot;&gt;
+          &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;  
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</pre></code>
+          
+        </section>
+        <!--- End of section: Navigation Bar -->
+
+        <!--- Begin of section: Footer -->
+        <section id="sg-content__footer" class="no-pad">
+          <h2>Footer</h2>
+          <hr>   
+          
+          <div class="extra-pad-b">
+            <p>The footer module that is similarly to be placed at the bottom of every page.</p>
+
+            <footer id="footer">
+              <div id="footer__nav">
+                <ul>
+                  <li class="footer__col-caption">Support</li>
+                  <a href="#"><li class="footer__col-item">Order Tracker</li></a>
+                  <a href="#"><li class="footer__col-item">Delivery & Return</li></a>
+                  <a href="#"><li class="footer__col-item">Payment Options</li></a>
+                  <a href="#"><li class="footer__col-item">Club Membership</li></a>
+                  <a href="#"><li class="footer__col-item">My Account</li></a>
+                </ul> 
+                <ul>
+                  <li class="footer__col-caption">OUR COMPANY</li>
+                  <a href="#"><li class="footer__col-item">About Us</li></a>
+                  <a href="#"><li class="footer__col-item">Style Guide</li></a>
+                  <a href="#"><li class="footer__col-item">Citations</li></a>
+                  <a href="#"><li class="footer__col-item">GitHub</li></a>
+                </ul>  
+              </div> 
+              <div id="footer__right">
+                <div id="footer__logo">
+                  <a href="index.htm"><img src="../img/company_logo_bw.png" alt="company logo bw"></a>
+                </div>
+                <div id="footer__social-media-links">
+                  <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div id="footer__contacts">
+                  +1 (604) 745-23-42</br>
+                  ask@crazybee.com</br></br>
+                  <i class="fas fa-map-marker-alt"></i><span class="fw-regular">Store Locations</span>
+                </div>
+              </div>
+            </footer>
+
+          </div>
+
+          <code class="sg-code extra-marg-t"><pre>&lt;footer id=&quot;footer&quot;&gt;
+  &lt;div id=&quot;footer__nav&quot;&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;footer__col-caption&quot;&gt;Support&lt;/li&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Order Tracker&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Delivery &amp; Return&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Payment Options&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Club Membership&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;My Account&lt;/li&gt;&lt;/a&gt;
+    &lt;/ul&gt; 
+    &lt;ul&gt;
+      &lt;li class=&quot;footer__col-caption&quot;&gt;OUR COMPANY&lt;/li&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;About Us&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Style Guide&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;Citations&lt;/li&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot;&gt;&lt;li class=&quot;footer__col-item&quot;&gt;GitHub&lt;/li&gt;&lt;/a&gt;
+    &lt;/ul&gt;  
+  &lt;/div&gt; 
+  &lt;div id=&quot;footer__right&quot;&gt;
+    &lt;div id=&quot;footer__logo&quot;&gt;
+      &lt;a href=&quot;index.htm&quot;&gt;&lt;img src=&quot;img/company_logo_bw.png&quot; alt=&quot;company logo bw&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;footer__social-media-links&quot;&gt;
+      &lt;a href=&quot;https://facebook.com/&quot;&gt;&lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href=&quot;https://instagram.com/&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href=&quot;https://twitter.com/&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;footer__contacts&quot;&gt;
+      +1 (604) 745-23-42&lt;/br&gt;
+      ask@crazybee.com&lt;/br&gt;&lt;/br&gt;
+      &lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt;&lt;span class=&quot;fw-regular&quot;&gt;Store Locations&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;</pre></code>
+
+        </section>
+        <!--- End of section: Footer -->
+
+        <!--- Begin of section: Breadcrumbs -->
+        <section id="sg-content__breadcrumbs" class="extra-marg-t extra-pad-t">
+          <h2>Breadcrumbs</h2>
+          <hr>  
+
+          <div class="extra-pad-b">
+            <p>A core part of the product navigation.</p>
+
+            <nav class="breadcrumbs">
+              <a href="javascript:void(0)" class="breadcrumbs__first-level">Womens</a>
+              <div class="breadcrumbs__separator">/</div>
+              <a href="avascript:void(0)" class="breadcrumbs__last-level">Hoodies & Jackets</a>
+            </nav>
+
+            <code class="sg-code extra-marg-t"><pre>&lt;nav class=&quot;breadcrumbs&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;breadcrumbs__first-level&quot;&gt;Womens&lt;/a&gt;
+  &lt;div class=&quot;breadcrumbs__separator&quot;&gt;/&lt;/div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;breadcrumbs__last-level&quot;&gt;Hoodies &amp; Jackets&lt;/a&gt;
+&lt;/nav&gt;</pre></code>
+
+          </div>
+        </section>
+        <!--- End of section: Breadcrumbs -->
+
+        <!--- Begin of section: Single Product View -->
+        <section id="sg-content__single-product-view">
+          <h2>Single Product View</h2>
+          <hr>  
+
+          <div class="extra-pad-b">
+            <p>A detailed view of a particular product that is common for all (sub)categories.</p>
+
+            <div id="product-view" class="grid-container grid-col-12 extra-pad-b">
+              <div id="product-view__gallery" class="col-6">
+
+                <!-- Product full-width images carousel -->
+                <!-- CITATION : Tutorial used: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp  -->
+                <div id="product-view__gallery__image">
+                  <div id="product-view__gallery">
+                    <img src="../img/products/mens_hoodies_grey_front.jpg" alt="Front view of the man wearing the grey hoodie">
+                    <img src="../img/products/mens_hoodies_grey_back.jpg" alt="Back view of the man wearing the grey hoodie">
+                    <img src="../img/products/mens_hoodies_grey_closeup.jpg" alt="Close up view of the man wearing the grey hoodie">
+                  </div>
+
+                  <div id="product-view__gallery__image__number"></div>
+                  <div class="product-card__btn-wishlist-add">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  
+                  <a id="product-view__gallery__btn-prev" onclick="carouselRotate(-1)">&#10094;</a>
+				          <a id="product-view__gallery__btn-next" onclick="carouselRotate(1)">&#10095;</a>
+                </div>
+
+                <!-- Thumbnails -->
+                <div id="product-view__gallery_thumbnails">
+                    <img src="../img/products/mens_hoodies_grey_front.jpg" alt="Front view of the man wearing the grey hoodie">
+                    <img src="../img/products/mens_hoodies_grey_back.jpg" alt="Back view of the man wearing the grey hoodie">
+                    <img src="../img/products/mens_hoodies_grey_closeup.jpg" alt="Close up view of the man wearing the grey hoodie">     
+                </div>
+              </div>
+
+              <div id="product-view__details" class="col-6">
+                  <h3>CREST SWEETSHIRT</h3>
+
+                  <div id="product-view__details__price">$55</div>
+                  <a class="btn-action">Add to Cart</a>
+                  
+                  <ul id="product-view__details__specs">
+                    <li>Slim fit</li>
+                    <li>Long raglan sleeves</li>
+                    <li>Ribbed hem and cuffs</li>
+                    <li>Crew neck</li>
+                    <li>Embroidered XXXX logo to chest</li>
+                    <li>80% Cotton, 20% Polyester</li>
+                    <li>Model is 6’3” and wears size XXL</li>
+                    <li>Label Colour: Black </li>
+                  </ul>
+
+                  <p class="product-view__details__description">Rest day the Crest way in this consistently 
+                    comfortable and casually stylish sweatshirt. A versatile look, you can wear it anywhere 
+                    and pair it with anything with confidence. Its Cotton-Polyester build is both incredibly
+                    soft and reliable, so you can combine relaxation and recreation.</p>
+
+                  <div class="accordion extra-pad-t">
+                    <div class="accordion-title">Shipping Details</div>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Good News! We are dispatching as normal and ensuring contactless delivery. However, due to COVID-19 we are seeing delays of approximately 5 working days.</li>
+                        <li>Free Standard Delivery (Estimated 3-5 Working Days) from over $100.</li>
+                        <li>Express Delivery (1-3 Working days)</li>
+                        <li>Free Returns on all orders.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="accordion extra-pad-t">
+                    <div class="accordion-title">Questions</div>
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Question 1</li>
+                      </ul>
+                    </div>
+                  </div>      
+              </div>
+              
+              <script src="../js/product_view.js"></script> 
+          </div>
+
+          <code class="sg-code extra-marg-t"><pre>&lt;div id=&quot;product-view&quot; class=&quot;grid-container grid-col-12 extra-pad-b&quot;&gt;
+  &lt;div id=&quot;product-view__gallery&quot; class=&quot;col-6&quot;&gt;
+    &lt;!-- Product full-width images carousel --&gt;
+    &lt;!-- CITATION : Tutorial used: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp  --&gt;
+    &lt;div id=&quot;product-view__gallery__image&quot;&gt;
+      &lt;div id=&quot;product-view__gallery&quot;&gt;
+        &lt;img src=&quot;../img/products/mens_hoodies_grey_front.jpg&quot; alt=&quot;Front view of the man wearing the grey hoodie&quot;&gt;
+        &lt;img src=&quot;../img/products/mens_hoodies_grey_back.jpg&quot; alt=&quot;Back view of the man wearing the grey hoodie&quot;&gt;
+        &lt;img src=&quot;../img/products/mens_hoodies_grey_closeup.jpg&quot; alt=&quot;Close up view of the man wearing the grey hoodie&quot;&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;product-view__gallery__image__number&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;product-card__btn-wishlist-add&quot;&gt;
+        &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;a id=&quot;product-view__gallery__btn-prev&quot; onclick=&quot;carouselRotate(-1)&quot;&gt;&amp;#10094;&lt;/a&gt;
+      &lt;a id=&quot;product-view__gallery__btn-next&quot; onclick=&quot;carouselRotate(1)&quot;&gt;&amp;#10095;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- Thumbnails --&gt;
+    &lt;div id=&quot;product-view__gallery_thumbnails&quot;&gt;
+      &lt;img src=&quot;../img/products/mens_hoodies_grey_front.jpg&quot; alt=&quot;Front view of the man wearing the grey hoodie&quot;&gt;
+      &lt;img src=&quot;../img/products/mens_hoodies_grey_back.jpg&quot; alt=&quot;Back view of the man wearing the grey hoodie&quot;&gt;
+      &lt;img src=&quot;../img/products/mens_hoodies_grey_closeup.jpg&quot; alt=&quot;Close up view of the man wearing the grey hoodie&quot;&gt;     
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;product-view__details&quot; class=&quot;col-6&quot;&gt;
+    &lt;h3&gt;CREST SWEETSHIRT&lt;/h3&gt;
+    &lt;div id=&quot;product-view__details__price&quot;&gt;$55&lt;/div&gt;
+    &lt;a class=&quot;btn-action&quot;&gt;Add to Cart&lt;/a&gt;
+    &lt;ul id=&quot;product-view__details__specs&quot;&gt;
+      &lt;li&gt;Slim fit&lt;/li&gt;
+      &lt;li&gt;Long raglan sleeves&lt;/li&gt;
+      &lt;li&gt;Ribbed hem and cuffs&lt;/li&gt;
+      &lt;li&gt;Crew neck&lt;/li&gt;
+      &lt;li&gt;Embroidered XXXX logo to chest&lt;/li&gt;
+      &lt;li&gt;80% Cotton, 20% Polyester&lt;/li&gt;
+      &lt;li&gt;Model is 6&rsquo;3&rdquo; and wears size XXL&lt;/li&gt;
+      &lt;li&gt;Label Colour: Black &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class=&quot;product-view__details__description&quot;&gt;Rest day the Crest way in this consistently 
+      comfortable and casually stylish sweatshirt. A versatile look, you can wear it anywhere 
+      and pair it with anything with confidence. Its Cotton-Polyester build is both incredibly
+      soft and reliable, so you can combine relaxation and recreation.
+    &lt;/p&gt;
+    &lt;div class=&quot;accordion extra-pad-t&quot;&gt;
+      &lt;div class=&quot;accordion-title&quot;&gt;Shipping Details&lt;/div&gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Good News! We are dispatching as normal and ensuring contactless delivery. However, due to COVID-19 we are seeing delays of approximately 5 working days.&lt;/li&gt;
+          &lt;li&gt;Free Standard Delivery (Estimated 3-5 Working Days) from over $100.&lt;/li&gt;
+          &lt;li&gt;Express Delivery (1-3 Working days)&lt;/li&gt;
+          &lt;li&gt;Free Returns on all orders.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;accordion extra-pad-t&quot;&gt;
+      &lt;div class=&quot;accordion-title&quot;&gt;Questions&lt;/div&gt;
+      &lt;div class=&quot;accordion-body&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Question 1&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/product_view.js&quot;&gt;&lt;/script&gt; 
+&lt;/div&gt;</pre></code>
+        </section>
+        <!--- End of section: Single Product View -->
+
+        <!--- Begin of section: Product Card -->
+        <section id="sg-content__product-card" class="extra-marg-t extra-pad-t">
+          <h2>Product Card</h2>
+          <hr>  
+
+          <div class="extra-pad-b">
+            <p>For use in catalogs and elsewhere.</p>
+
+
+            <div class="product-card">
+              <a href="#">
+                <img src="../img/products/mens_hoodies_orange.jpg" alt="Front view of the man wearing the orange hoodie">
+                <div class="product-card__btn-wishlist-add">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="product-card__info-block">
+                  <h4>CREST SWEETSHIRT</h4>
+                  <div class="product-card__info-block__price">55$</div>
+                </div>
+              </a>
+            </div>
+
+            <code class="sg-code extra-marg-t"><pre>
+
+            </pre></code>
+
+          </div>
+        </section>
+        <!--- End of section: Product Card -->
+
+      </main>
+
+    </div>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+
+</html>
