@@ -286,13 +286,14 @@ a:focus {
     grid-template-columns: max-content;
 }
 
-/*  Use to create responsive full bleed images, like in the "About Us", 
+/*  Use to create responsive full bleed images/videos, like in the "About Us", 
 or "Citations" pages  */
 .full-bleed-container {
     margin: 0;
     overflow: hidden;
 }
-.full-bleed-container img {
+.full-bleed-container img,
+.full-bleed-container video {
     width: 100%;
     height: 100%;
     object-fit: cover;   
@@ -399,13 +400,13 @@ or "Citations" pages  */
     font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
-    color: white;
+    color: white !important;
     background-color: var(--black);
 }
 .btn-default:hover,
 .btn-default:focus {
     background-color: var(--yellow);
-    color: var(--black);
+    color: var(--black) !important;
 }
 .btn-default:active {
     background-color: var(--lgray);
@@ -417,13 +418,13 @@ or "Citations" pages  */
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.33em;
     font-weight: 900;
-    color: white;
+    color: white !important;
     background-color: var(--black);
 }
 .btn-special:hover,
 .btn-special:focus {
     background-color: var(--yellow);
-    color: var(--black);
+    color: var(--black) !important;
 }
 .btn-special:active {
     background-color: var(--lgray);
@@ -822,6 +823,7 @@ label.required::after {
 
 #footer__social-media-links {
     padding: 1.33rem 0;
+    letter-spacing: 0.09em;
     font-size: 2rem;
 }
 #footer__social-media-links a,
@@ -842,8 +844,8 @@ label.required::after {
 #footer__contacts i {
     font-size: 1.33em;
     padding-right: .33em;
+    line-height: 0.3em;
 }
-
 
 /*
   Modules: Breadcrumbs
@@ -876,4 +878,83 @@ label.required::after {
 
 .breadcrumbs__last-level {
     font-weight: 700;
+}
+
+
+/* 
+    Landing Page
+*/
+
+#landing a {
+    margin: auto;
+}
+
+#landing__hero {
+    position: relative;
+}
+
+#landing__hero h1 {
+    padding: .45em .25em;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 20rem;
+    left: 5rem;
+}
+
+#landing__hero h2 {
+    padding: .5em .4em;
+    font-size: 2.33em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--white);
+    position: absolute;
+    bottom: 17rem;
+    left: 5rem;
+}
+
+#landing__hero a {
+    padding: .66em 1em;
+    font-size: 2em;
+    position: absolute;
+    bottom: 12rem;
+    left: 5rem;    
+}
+
+#landing__new-arrivals h2,
+#landing__bestsellers h2 {
+    padding: 0em 0em 1.33em 0em;
+    text-align: center;
+}
+
+#landing__new-arrivals .flex-container,
+#landing__bestsellers .flex-container {
+    column-gap: 5rem;   
+}
+
+#landing__sales {
+    padding: .66rem 0;
+    background-color: #F2003A;
+}
+
+#landing__sales h2 {
+    padding-bottom: 1.66rem;
+    padding-right: 2.66rem;
+    color: white !important;
+    animation: pulse .33s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(1.025);
+    }
+}
+
+#landing__sales a {
+    margin: 0;
+    max-height: 2.4em;
 }
