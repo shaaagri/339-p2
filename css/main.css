@@ -773,29 +773,6 @@ label.required::after {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 1024px) {
-    #main-nav__corner__top-nav {
-        display: none;
-    }
-    #main-nav__corner__bottom-nav {
-        display: none;
-    }
-    #main-nav__corner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #main-nav__corner__hamburger {
-        display: block;
-        margin-right: .8em;
-        font-size: 1.95em;
-    }
-    #main-nav__corner__hamburger:hover,
-    #main-nav__corner__hamburger:focus {
-        cursor: pointer;
-    }
-}
-
 #main-nav__dropdown {
     display: flex;
     justify-content: space-between;
@@ -849,6 +826,48 @@ label.required::after {
     color: var(--yellow);
     background-color: var(--darkyellow);
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #main-nav__corner__top-nav {
+        display: none;
+    }
+    #main-nav__corner__bottom-nav {
+        display: none;
+    }
+    #main-nav__corner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main-nav__corner__hamburger {
+        display: block;
+        margin-right: .8em;
+        font-size: 1.95em;
+    }
+    #main-nav__corner__hamburger:hover,
+    #main-nav__corner__hamburger:focus {
+        cursor: pointer;
+    }
+
+    #main-nav__dropdown {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 .5em;
+        top: 5.6rem;
+    }
+
+   
+
+    #main-nav__dropdown__arrow.womens,
+    #main-nav__dropdown__arrow.mens {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #main-nav__dropdown > div {
+        flex: 50%;
+    }
 }
 
 
@@ -932,6 +951,36 @@ label.required::after {
     font-size: 1.33em;
     padding-right: .33em;
     line-height: 0.3em;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        font-size: 1.5em;
+        height: auto;
+        padding-bottom: 3em;
+        text-align: center;
+    }
+
+    #footer li {
+        line-height: 3rem;
+    }
+
+    #footer,
+    #footer__nav {
+        flex-direction: column;
+    }
+    #footer__nav ul {
+        padding: 0;
+        padding-bottom: 3em;
+    }
+
+    #footer__social-media-links {
+        font-size: 3rem;
+    }
+
+    #footer__contacts {
+        line-height: 2.5rem;
+    }
 }
 
 /*

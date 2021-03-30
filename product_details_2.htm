@@ -22,53 +22,76 @@
 
   <body>
     <header>
-      <nav id="main-nav">
-        <div id="main-nav__logo">
-          <a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
-        </div>
-        <div id="main-nav__stretch">
-          <div class="main-nav__central-item" aria-label="womens">Womens</div>
-          <div class="main-nav__central-item active" aria-label="mens">Mens</div>
-        </div>
-        <div id="main-nav__corner">
-          <div id="main-nav__corner__top-nav">
-            <a href="about_us.htm"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
-            <a href="help.htm"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
-            <a href="sign_in.htm"><div class="main-nav__corner__top-nav__btn"><i class="far fa-user"></i>Username</div></a>
-          </div>  
-          <div id="main-nav__corner__bottom-nav">
-            <div id="main-nav__corner__bottom-nav__search-bar">
-              <input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
-            </div>
-            <div class="main-nav__corner__bottom-nav__btn">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="main-nav__corner__bottom-nav__btn">
-              <a href="shopping_cart.htm"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-          </div>  
-        </div>
-        <div id="main-nav__dropdown">
-          <div class="main-nav__dropdown__col">
-            <h4>Trending</h4>
-            <ul><li>New Releases</li><li>Bestsellers</li><li>Events</li></ul>
-          </div>
-          <div class="main-nav__dropdown__col">
-            <h4>Clothing</h4>
-            <ul><li>Base Layers</li><li>Tank Tops</li><li>Bottoms</li><li>Hoodies & Jackets</li><li>Underwear</li></ul>
-          </div>
-          <div class="main-nav__dropdown__col">
-            <h4>Shoes</h4>
-            <ul><li>Life Style</li><li>Training & Gym</li><li>Running</li><li>All Shoes</li></ul>
-          </div>
-          <div class="main-nav__dropdown__col">
-            <h4>Accessories</h4>
-            <ul><li>Bags & Backpacks</li><li>Water Bottles</li><li>Equipments</li><li>Socks</li></ul>
-          </div>
-          <div id="main-nav__dropdown__arrow"></div>
-        </div>      
-      </nav>
-    </header>
+		<nav id="main-nav">
+		  <div id="main-nav__logo">
+			<a href="index.htm"><img src="img/company_logo.png" alt="company logo"></a>
+		  </div>
+		  <div id="main-nav__stretch">
+			<div class="main-nav__central-item" aria-label="womens">Womens</div>
+			<div class="main-nav__central-item" aria-label="mens">Mens</div>
+		  </div>
+		  <div id="main-nav__corner">
+			<div id="main-nav__corner__top-nav">
+			  <a href="about_us.htm"><div class="main-nav__corner__top-nav__btn">ABOUT US</div></a>
+			  <a href="help.htm"><div class="main-nav__corner__top-nav__btn">HELP</div></a>
+			  <!-- Here it is the "unloggged" state of the navbar. The rest of the
+			  pages are assumed to be in the "user logged in" state-->
+			  <a href="sign_in.htm"><div class="main-nav__corner__top-nav__btn">SIGN IN</div></a>
+			  <a href="sign_up.htm"><div class="main-nav__corner__top-nav__btn">SIGN UP</div></a>
+			</div>
+			<div id="main-nav__corner__bottom-nav">
+			  <div id="main-nav__corner__bottom-nav__search-bar">
+				<input class="inp-text" type="text" name="search-bar" placeholder="SEARCH"><i class="fas fa-search"></i>
+			  </div>
+			  <div class="main-nav__corner__bottom-nav__btn">
+				<i class="far fa-heart"></i>
+			  </div>
+			  <div class="main-nav__corner__bottom-nav__btn">
+				<a href="shopping_cart.htm"><i class="fas fa-shopping-cart"></i></a>
+			  </div>
+			</div>
+			<div id="main-nav__corner__hamburger">
+			  <i class="fas fa-bars"></i>
+			</div>
+			<div id="main-nav__corner__hamburger_body">
+			  <ul>
+				<!--- Had to double this part of the navi, since other ways to do
+				  it are more difficult -->
+				<a href="about_us.htm"><li>ABOUT US</li></a>
+				<a href="help.htm"><li>HELP</li></a>
+				<a href="sign_in.htm"><li>SIGN IN</li></a>
+				<a href="sign_up.htm"><li>SIGN UP</li></a>
+				<input class="inp-text" type="text" name="search-bar" placeholder="SEARCH">
+				<a id="main-nav__corner__hamburger_body__search-btn" class="btn-default">
+				  <i class="fas fa-search"></i>
+				</a>
+				<a href="#"><li><i class="far fa-heart"></i> MY WISHLIST</li></a>
+				<a href="shopping_cart.htm"><li><i class="fas fa-shopping-cart"></i> MY SHOPPING CART</li></a>
+			  </ul>
+			</div>
+			<div id="main-nav__corner__hamburger_body__backdrop"></div>
+		  </div>
+		  <div id="main-nav__dropdown">
+			<div class="main-nav__dropdown__col">
+			  <h4>Trending</h4>
+			  <ul><li>New Releases</li><li>Bestsellers</li><li>Events</li></ul>
+			</div>
+			<div class="main-nav__dropdown__col">
+			  <h4>Clothing</h4>
+			  <ul><li>Base Layers</li><li>Tank Tops</li><li>Bottoms</li><li>Hoodies & Jackets</li><li>Underwear</li></ul>
+			</div>
+			<div class="main-nav__dropdown__col">
+			  <h4>Shoes</h4>
+			  <ul><li>Life Style</li><li>Training & Gym</li><li>Running</li><li>All Shoes</li></ul>
+			</div>
+			<div class="main-nav__dropdown__col">
+			  <h4>Accessories</h4>
+			  <ul><li>Bags & Backpacks</li><li>Water Bottles</li><li>Equipments</li><li>Socks</li></ul>
+			</div>
+			<div id="main-nav__dropdown__arrow"></div>
+		  </div>
+		</nav>
+	  </header>
 
 	<main class="std-container">
 		<nav class="breadcrumbs">
