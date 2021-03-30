@@ -148,6 +148,22 @@ $(".shopping-cart__table__item-qty i").click(function(e) {
     $(e.target).siblings(".shopping-cart__table__item-qty-number").text(qtyNumber);
 });
 
+/* randomized links for the under construction page */
+var pages = [
+    'about_us.htm',
+    'citations.htm',
+    'help.htm',
+    'index.htm',
+    'product_details.htm',
+    'product_details_2.htm',
+    'product_details_3.htm',
+    'products.htm',
+    'shopping_cart.htm',
+    'sign_in.htm',
+    'sign_up.htm'
+];
+$("#random-link").attr("href", pages[(Math.floor(Math.random() * pages.length-1) + 1)]);
+
 
 /*         P O S T - I N I T I A L I Z A T I O N       */
 /* =================================================== */

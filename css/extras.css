@@ -126,3 +126,15 @@
     width: clamp(50rem, 20vw, 50rem);
 }
 
+#under-construction * {
+    text-align: center;
+}
+
+#under-construction p {
+    font-size: 1.15em;
+}
+
+#under-construction img {
+    padding-top: 2rem;
+    max-width: 44rem;
+}
