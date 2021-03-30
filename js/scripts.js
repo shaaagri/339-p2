@@ -165,6 +165,21 @@ var pages = [
 $("#random-link").attr("href", pages[(Math.floor(Math.random() * pages.length-1) + 1)]);
 
 
+/*
+    responsive stuff
+*/
+$('#main-nav__corner__hamburger').click(function(e) {
+    $('#main-nav__corner__hamburger_body__backdrop').fadeIn(250);
+    $('#main-nav__corner__hamburger_body').show();
+});
+
+$('#main-nav__corner__hamburger_body__backdrop').click(function(e) {
+    $('#main-nav__corner__hamburger_body').hide();
+    $('#main-nav__corner__hamburger_body__backdrop').hide();
+});
+
+
+
 /*         P O S T - I N I T I A L I Z A T I O N       */
 /* =================================================== */
 $('#main-nav__dropdown').css('visibility', 'visible');  // to prevent dropdown's flash upon the page load
