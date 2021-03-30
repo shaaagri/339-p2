@@ -266,6 +266,13 @@ a:focus {
     max-width: 70rem;
 }
 
+/*  Almost like the standard container, just tries to take more x-space  */
+.wide-container {
+    margin: auto;
+    padding: 4em 7em 10em 7em;
+    font-size: .95em;
+}
+
 /*  Contents of this container will be centered horizontally, but not vertically  */
 .centered-container {
     display: flex;
@@ -340,6 +347,19 @@ or "Citations" pages  */
 
 .text-center {
     text-align: center;
+}
+.flex-center {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+}
+.flex-h-center {
+    display: flex;
+    justify-content: center;   
+}
+.flex-v-center {
+    display: flex;
+    align-items: center;     
 }
 
 .inline {

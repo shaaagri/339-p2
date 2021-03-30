@@ -116,7 +116,7 @@
     font-size: 1rem;
     color: #f2f2f2;
     background-color: var(--gray);
-    border-radius: 0px 0px var(--btn-border-r) 0px;
+    opacity: .66;
 }
 
 /*  CITATION : Tutorial used: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp  */
@@ -253,3 +253,72 @@
     color: var(--yellow);
 }
 
+
+/*
+  Modules: Shopping Cart
+*/
+
+#shopping-cart .flex-container {
+    column-gap: 5rem;
+}
+
+#shopping-cart h4 {
+    margin: 0;
+    padding-bottom: .66em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#shopping-cart__table {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3rem 1fr;
+    width: 100%;
+    margin-top: 4em;
+    font-size: 1.233em;
+}
+
+.shopping-cart__table__col-title {
+    font-size: 1.33em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.shopping-cart__table__item-image {
+    width: 100%;
+    height: 100%;
+    max-width: 8rem;
+    padding: .8em 1.33em .8em 0;
+    object-fit: cover;
+}
+
+#shopping-cart__table > *:not(.shopping-cart__table__col-title) {
+    height: 8rem;
+    border-bottom: 1px solid var(--gray2);
+}
+#shopping-cart__table > *:not(.shopping-cart__table__col-title) span {
+    line-height: 7.85rem;
+}
+
+/* small buttons in shopping cart items */
+.shopping-cart__table__item-qty i {
+    padding: 0 .5em;
+}
+#shopping-cart__table i {
+    font-size: 1.25em;
+    color: var(--gray2);
+}
+#shopping-cart__table i:hover, 
+#shopping-cart__table i:focus {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+#shopping-cart__table__total {
+    width: 25rem;
+    height: 20rem;
+    padding-top: 4.5rem;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    border: 1px solid var(--lgray2);
+}

@@ -134,7 +134,19 @@ $(".catalog-control .accordion-body li").click(function(e) {
     $(e.target).addClass('active');
 });
 
+/* shopping cart items table buttons */
+$(".shopping-cart__table__item-qty i").click(function(e) {
+    let qtyNumber = $(e.target).siblings(".shopping-cart__table__item-qty-number").text();
+    
+    if ($(e.target).hasClass("fa-caret-square-left") && qtyNumber > 1) {
+        qtyNumber--;
+    }
+    else if ($(e.target).hasClass("fa-caret-square-right") && qtyNumber < 99) {
+        qtyNumber++;
+    }
 
+    $(e.target).siblings(".shopping-cart__table__item-qty-number").text(qtyNumber);
+});
 
 
 /*         P O S T - I N I T I A L I Z A T I O N       */
