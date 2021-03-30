@@ -1095,3 +1095,96 @@ label.required::after {
     margin: 0;
     max-height: 2.4em;
 }
+
+@media (max-width: 1024px) {
+    #landing__hero h1 {
+        padding: .45em 0.45em;
+        font-size: 2.5em;
+        bottom: 9rem;
+        left: 3rem;
+    }
+    
+    #landing__hero h2 {
+        padding: .5em 0.8em;
+        font-size: 1.5em;
+        bottom: 7rem;
+        left: 3rem;
+    }    
+
+    #landing__hero a {
+        padding: .66em 1em;
+        font-size: 1.5em;
+        bottom: 3.3rem;
+        left: 3rem;
+    }   
+
+    #landing__new-arrivals .flex-container,
+    #landing__bestsellers .flex-container {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    #landing__sales .flex-container {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    #landing__sales {
+        padding: 1rem 0 3rem 0;
+    }
+
+    #landing__sales h2 {
+        padding-bottom: .33rem;
+        padding-right: 0;
+        font-size: 1.4rem;
+    } 
+
+    #landing__sales a {
+        margin: 0;
+        padding: 0em 1em;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #landing__hero h1 {
+        padding: 1.05em 0.45em;
+        font-size: 6vw;
+        top: 1rem;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    
+    #landing__hero h2 {
+        padding: .5em 0.8em;
+        font-size: 4vw;
+        top: 19vw;
+        bottom: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        line-height: 1.1em;
+    }    
+
+    #landing__hero a {
+        padding: .66em 1em;
+        font-size: 1.5em;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }      
+}
+
+@media (max-width: 580px) {
+    #landing__sales h2 {
+        padding-bottom: .33rem;
+        padding-right: 0;
+        font-size: 1.2rem;
+        max-width: 80vw;
+        text-align: center;
+    }
+}

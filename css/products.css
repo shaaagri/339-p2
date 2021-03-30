@@ -322,3 +322,7 @@
     line-height: 1.8em;
     border: 1px solid var(--lgray2);
 }
+
+@media (max-width: 580px) {
+ 
+}
