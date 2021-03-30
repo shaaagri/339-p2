@@ -171,3 +171,21 @@ $('#main-nav__dropdown').css('visibility', 'visible');  // to prevent dropdown's
 $('#main-nav__dropdown').hide();
 
 $(".tab-control__buttons li.active" ).trigger('click');
+
+// for the Help page
+if ($("main").attr("id") == "help") {
+    // Citation: https://stackoverflow.com/questions/3552944/how-to-get-the-anchor-from-the-url-using-jquery
+
+    /* This opens the demanded help section when opened from the footer */
+    switch ($(location).attr('hash')) {
+        case '#delivery':
+            $(".tab-control__buttons li").eq(2).trigger("click");
+            break;
+        case '#payment':
+            $(".tab-control__buttons li").eq(3).trigger("click");
+            break;
+        case '#club-membership':
+            $(".tab-control__buttons li").eq(5).trigger("click");
+            break;
+     }
+}
