@@ -323,6 +323,34 @@
     border: 1px solid var(--lgray2);
 }
 
-@media (max-width: 580px) {
- 
+@media (max-width: 1024px) {
+    .products-container .breadcrumbs {
+        grid-column: 1 / span 2;
+    } 
+
+    #product-catalog__controls {
+        padding: 0;
+        position: sticky;
+        left: 2rem;
+        top: 2rem;
+    }    
 }
+
+@media (max-width: 768px) {
+    .products-container {
+        display: inline-block;
+        margin: auto;
+        padding: 4em 1em 10em 1em;
+        font-size: .95em;
+    } 
+
+    .products-container .breadcrumbs {
+        padding-left: .5em;
+    }  
+
+    #product-catalog__controls {
+        font-size: .9em;
+    }    
+}
+
+
