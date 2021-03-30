@@ -90,11 +90,3 @@
 .start-col-12 {
     grid-column-start: 12;
 }
-
-.flex-container {
-    display: flex;
-    width: 100%;
-}
-.flex-child {
-    flex: 1;
-}

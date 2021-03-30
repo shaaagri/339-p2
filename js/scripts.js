@@ -92,6 +92,29 @@ $(".tab-control__buttons li").click(function(e) {
 });
 
 
+/*
+    text inputs
+*/
+
+/*  Enabling showing and hiding passwords inside password inputs  */ 
+$(".inp-text__password-toggle").click(function(e) {
+    let passwordInput = $(e.target).siblings("input");
+
+    if (passwordInput.attr('type') == "password") {
+        $(e.target).siblings("input").attr('type', 'text'); 
+
+        $(e.target).removeClass("fa-eye");
+        $(e.target).addClass("fa-eye-slash");
+    }
+    else {
+        $(e.target).siblings("input").attr('type', 'password'); 
+
+        $(e.target).removeClass("fa-eye-slash");
+        $(e.target).addClass("fa-eye");
+    }
+});
+
+
 /* 
     other
 */

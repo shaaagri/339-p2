@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In | CRAZYBEE</title>
+    <title>Sign Up | CRAZYBEE</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fonts.css">
@@ -71,29 +71,53 @@
 
     <main class="centered-container">
       <div class="min-width-container">
-        <h2 class="extra-pad-b">SIGN IN TO YOUR ACCOUNT</h2>
+        <h2 class="extra-pad-b">CREATE AN ACCOUNT</h2>
 
-        <input class="inp-text" type="text" name="text-input" placeholder="Email address">
+        <div class="extra-pad-b">
+          <label for="first-name" class="top required">Your Name</label>
+          <input class="inp-text" type="text" name="first-name" placeholder="First Name">
+          <div class="extra-pad-t">
+            <input class="inp-text" type="text" name="last-name" placeholder="Last Name">
+          </div>
+        </div>
+        
         <div class="extra-pad-t">
-          <input class="inp-text" type="password" name="text-input" placeholder="Password"><i class="fas fa-eye inp-text__password-toggle"></i>
+          <label for="date-of-birth" class="top required">Date of Birth</label>
+          <input class="inp-text" type="text" name="date-of-birth" placeholder="DD/MM/YY">      
         </div>
 
-        <div class="flex-container flex-h-stretch extra-pad-t extra-pad-b">
-          <div>
-            <input type="checkbox" name="remember-me" id="remember-me" class="inp-checkbox">
-            <label for="remember-me" class="label-checkbox">Remember me</label>
-          </div>
-          <div>
-            <a href="javascript:void(0)" class="link-alt">Forgot password?</a>
+        <div class="extra-pad-t extra-marg-t">
+          <label for="gender-male" class="top required">Gender</label>
+          <input type="radio" id="gender-male" name="gender-male" value="male">
+          <label for="male" class="label-radio">Male</label>
+          <input type="radio" id="gender-female" name="gender-female" value="female">
+          <label for="female" class="label-radio">Female</label>
+          <input type="radio" id="gender-other" name="gender-other" value="other">
+          <label for="other" class="label-radio">Other</label>
+        </div>
+
+        <div class="extra-pad-t extra-marg-t">
+          <label for="country" class="top">Country</label>
+          <select class="inp-dropdown" name="country" id="country">
+            <option value="option-1">Australia</option>
+            <option value="option-2">Canada</option>
+            <option value="option-3">China</option>
+            <option value="option-4">Russia</option>
+            <option value="option-5">South Korea</option>
+            <option value="option-6">United States</option>
+          </select>    
+        </div>
+
+        <div class="extra-pad-t extra-pad-b extra-marg-t">
+          <label for="email" class="top required">Log In Details</label>
+          <input class="inp-text" type="text" name="email" placeholder="Email address">
+          <div class="extra-pad-t">
+            <input class="inp-text" type="password" name="password" placeholder="Password">
           </div>
         </div>
 
         <div class="extra-pad-t extra-marg-t text-center">
-          <a class="btn-action">Sign In</a>
-        </div>
-
-        <div class="extra-pad-t extra-marg-t text-center">
-          <a href="sign_up.htm" class="link-alt">Create an account</a>
+          <a class="btn-action">Sign Up</a>
         </div>
       </div>
 

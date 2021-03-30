@@ -249,9 +249,14 @@ a:focus {
 }
 
 
+
 /* 
-  Document blocks
+  Layouts and document blocks
 */
+
+
+/*  Containers give some initial formatting to whatever is inside them. It is okay
+    to nest them inside each other */
 
 .std-container {
     margin: auto;
@@ -261,21 +266,49 @@ a:focus {
     max-width: 70rem;
 }
 
-.subsection {
-    padding-bottom: 2em;
+/*  Contents of this container will be centered horizontally, but not vertically  */
+.centered-container {
+    display: flex;
+    padding: 4em 0 10em 4em;
+    justify-content: center;
+}
+
+/*  Contents of this container take as little width as possible, instead of stretching */
+.min-width-container {
+    display: grid;
+    grid-template-columns: max-content;
 }
 
 /*  Use to create responsive full bleed images, like in the "About Us", 
-or "Citations" pages */
-.full-bleed {
+or "Citations" pages  */
+.full-bleed-container {
     margin: 0;
     overflow: hidden;
 }
-.full-bleed img {
+.full-bleed-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;   
 }
+
+/*  General-purpose flex container  */
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+.flex-child {
+    flex: 1;
+}
+/*  Spreads elements inside a flex container horizontally  */
+.flex-h-stretch {
+    justify-content: space-between;
+}
+
+
+.subsection {
+    padding-bottom: 2em;
+}
+
 
 
 /* 
@@ -316,6 +349,7 @@ or "Citations" pages */
 .hidden {
     display: none;
 }
+
 
 
 /* 
@@ -421,7 +455,7 @@ or "Citations" pages */
     color: var(--gray2);
 }
 .inp-text__password-toggle {
-    margin-left: -30px;
+    margin-left: -26px;
     color: var(--gray2);
     cursor: pointer;
 }
@@ -451,7 +485,8 @@ label.required::after {
     display: inline;
 }
 .label-checkbox {
-    padding: 0em 0.33em;
+    padding: 0em .2em;
+    vertical-align: bottom;
     text-transform: none;
 }
 .label-radio {
@@ -494,6 +529,7 @@ label.required::after {
 .accordion-body.empty {
     padding: 0 !important;
 }
+
 
 /* UI: Tab Control */
 
@@ -538,6 +574,7 @@ label.required::after {
     font-size: .9em;
     font-family: 'Droid Sans', sans-serif;
 }
+
 
 
 /*
