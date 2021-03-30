@@ -9,7 +9,7 @@
 */
 
 :root {
-    --black: #100E00;
+    --black: #100F0A;
     --yellow: #FFE500;
     --yellow2: #D1BC00;
     --yellow3: #F1DA11;
@@ -712,6 +712,19 @@ label.required::after {
 .main-nav__corner__bottom-nav__btn i:focus {
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    #main-nav__corner__top-nav {
+        display: none;
+    }
+    #main-nav__corner__bottom-nav {
+        display: none;
+    }
+    #main-nav__corner__hamburger {
+        display: block;
+    }
+}
+
 #main-nav__dropdown {
     display: flex;
     justify-content: space-between;
