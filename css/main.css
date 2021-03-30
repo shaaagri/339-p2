@@ -420,6 +420,7 @@ or "Citations" pages  */
     font-weight: 900;
     color: white !important;
     background-color: var(--black);
+    letter-spacing: 0.033em;
 }
 .btn-special:hover,
 .btn-special:focus {
