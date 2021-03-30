@@ -189,3 +189,9 @@ if ($("main").attr("id") == "help") {
             break;
      }
 }
+
+// temporary enabling buttons in the top nav dropdown (all lead to the product
+// catalog mockup page) - bit ugly and bad SEO, but it is temporary, so...
+$('#main-nav__dropdown li').click(function(e) {
+    window.location.href = "products.htm";
+});

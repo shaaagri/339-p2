@@ -677,7 +677,10 @@ label.required::after {
 }
 
 #main-nav__corner__bottom-nav {
+    display: flex;
+    justify-content: flex-end;
     padding-top: 1.4em;
+    padding-right: .33em;
 }
 #main-nav__corner__bottom-nav__search-bar .inp-text {
     width: 14rem;
