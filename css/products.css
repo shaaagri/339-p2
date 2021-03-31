@@ -20,6 +20,7 @@
     position: sticky;
     left: 2rem;
     top: 2rem;
+    height: 60rem;
 }
 
 #product-catalog__list {
@@ -334,6 +335,15 @@
         left: 2rem;
         top: 2rem;
     }    
+
+    #shopping-cart .flex-container {
+        column-gap: 2rem;
+    }
+
+    .shopping-cart__table__item-qty {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {

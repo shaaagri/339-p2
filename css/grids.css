@@ -90,3 +90,10 @@
 .start-col-12 {
     grid-column-start: 12;
 }
+
+@media (max-width: 580px) {
+    .grid-col-12 {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+}

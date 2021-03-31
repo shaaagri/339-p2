@@ -721,11 +721,11 @@ label.required::after {
 #main-nav__corner__hamburger_body {
     display: none;
     width: 80vw;
-    max-width: 28em;
+    max-width: 22em;
     background-color: white;
     position: fixed;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: .33rem;
+    top: .33rem;
     z-index: 999;
 }
 
@@ -756,6 +756,7 @@ label.required::after {
 #main-nav__corner__hamburger_body .inp-text {
     margin: .5em 0;
     margin-left: 2em;
+    width: 14rem;
 }
 
 #main-nav__corner__hamburger_body li > i {
@@ -956,7 +957,7 @@ label.required::after {
 
 @media (max-width: 768px) {
     #footer {
-        font-size: 1.5em;
+        font-size: 1.33em;
         height: auto;
         padding-bottom: 3em;
         text-align: center;
@@ -1028,6 +1029,7 @@ label.required::after {
 
 #landing__hero {
     position: relative;
+    height: 75vh;
 }
 
 #landing__hero h1 {
@@ -1144,13 +1146,19 @@ label.required::after {
         padding: 0em 1em;
         line-height: 1em;
     }
+
+    .wide-container {
+        margin: auto;
+        padding: 3em 2em 10em 2em;
+        font-size: .9em;
+    } 
 }
 
 @media (max-width: 768px) {
     #landing__hero h1 {
-        padding: 1.05em 0.45em;
-        font-size: 6vw;
-        top: 1rem;
+        padding: 1.5em 0.45em;
+        font-size: 7vw;
+        top: 9.3rem;
         bottom: auto;
         left: 0;
         right: 0;
@@ -1158,9 +1166,9 @@ label.required::after {
     }
     
     #landing__hero h2 {
-        padding: .5em 0.8em;
+        padding: 0.8em 0.8em;
         font-size: 4vw;
-        top: 19vw;
+        top: 52vw;
         bottom: auto;
         left: 0;
         right: 0;
@@ -1176,7 +1184,15 @@ label.required::after {
         left: 0;
         right: 0;
         text-align: center;
-    }      
+    }    
+    
+    .std-container {
+        margin: auto;
+        padding: 3em 1em 10em 1em;
+        font-size: .95em;
+        width: 80vw;
+        max-width: 70rem;
+    }  
 }
 
 @media (max-width: 580px) {
@@ -1186,5 +1202,9 @@ label.required::after {
         font-size: 1.2rem;
         max-width: 80vw;
         text-align: center;
+    }
+
+    .centered-container {
+        padding: 2rem 0 10rem 0;
     }
 }

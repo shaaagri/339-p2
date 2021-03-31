@@ -100,6 +100,34 @@
     line-height: 1.66em;
 }
 
+@media (max-width: 768px) {
+    .tab-control.help {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: max-content 1fr;
+        column-gap: 1.66em;
+    }   
+
+    .tab-control.help .tab-control__buttons li {
+        padding: 1.066em 2.55em;
+        font-size: 1.066em;
+    }
+
+    .tab-control__buttons ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .tab-control__buttons {
+        padding-bottom: 3rem;
+    }
+
+    .tab-control.help .tab-control__content {
+        padding: 0;
+    }
+}
+
 
 /* 
     Citations Page
