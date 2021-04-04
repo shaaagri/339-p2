@@ -17,7 +17,7 @@ Spring 2021
 * **Desktop** and **Mobile**: [*All pages*] Search bar in the top navigation does not work.
 * **Desktop** and **Mobile**: [*All pages*] HTML validator shows some errors. (CSS is ok. the errors CSS validator gives show that it's just a bit behind the newer CSS features).
 * **Desktop** and **Mobile**: [*products.htm*]: Sidebar controls do not work. Particularly, the "Colors", "Brand" and "Discount" filters are not implemented. (The intended behavior is to have checkboxes there. Also, to have nice corresponding icons throughout for different colors, size. Also, rating stars are missing in product cards and descriptions).
-* **Desktop** and **Mobile**: [*product_details.htm/product_details_X.htm*] "Add to Cart" button does nothing. It is supposed to fill the Shopping Cart.
+* **Desktop** and **Mobile**: [*product_details.htm/product_details_X.htm*] "Add to Cart" button does nothing. It is supposed to fill the Shopping Cart. The cart icon in the top bar should display the "notification badge" with current amount of products in the cart.
 * **Desktop** and **Mobile**: [*about_us.htm*] There is still some Lorem Ipsum left, as well as buttons that do nothing.
 * **Desktop** and **Mobile**: [*shopping_cart.htm*] Underdeveloped page. Products are not linked with their detail pages yet, the "remove" X button does not work, and the "Checkout" panel is unfinished. The purchase completion step is missing altogether.
 * **Mobile**: [*Landing Page (index.htm)*] Extraneous padding in the hero yellow header. Also, video sequences get improperly cropped at this width and some are not recognizable anymore.
