@@ -19,7 +19,7 @@ Spring 2021
 * **Desktop** and **Mobile**: [*products.htm*]: Sidebar controls do not work. Particularly, the "Colors", "Brand" and "Discount" filters are not implemented. (The intended behavior is to have checkboxes there. Also, to have nice corresponding icons throughout for different colors, size. Also, rating stars are missing in product cards and descriptions).
 * **Desktop** and **Mobile**: [*product_details.htm/product_details_X.htm*] "Add to Cart" button does nothing. It is supposed to fill the Shopping Cart.
 * **Desktop** and **Mobile**: [*about_us.htm*] There is still some Lorem Ipsum left, as well as buttons that do nothing.
-* **Desktop** and **Mobile**: [*shopping_cart.htm*] Underdeveloped page. Products are not linked with their detail pages yet, the "delete" button does not work, and the "Checkout" panel is unfinished. The purchase completion step is missing altogether.
+* **Desktop** and **Mobile**: [*shopping_cart.htm*] Underdeveloped page. Products are not linked with their detail pages yet, the "remove" X button does not work, and the "Checkout" panel is unfinished. The purchase completion step is missing altogether.
 * **Mobile**: [*Landing Page (index.htm)*] Extraneous padding in the hero yellow header. Also, video sequences get improperly cropped at this width and some are not recognizable anymore.
 * **Mobile**: [*products.htm*]: The sidebar is too wide, squishing away the product cards. The better solution for mobile widths would be to turn the sidebar into a top bar, similar to what's been done in Help page, and making it sticky, so it stays when scrolling through the products.
 * **Mobile**: [*product_details.htm/product_details_X.htm*]: Extraneous padding and broken alignment all along.
