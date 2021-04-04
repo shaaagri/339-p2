@@ -24,3 +24,4 @@ Spring 2021
 * **Mobile**: [*product_details.htm/product_details_X.htm*]: Extraneous padding and broken alignment all along.
 * **Mobile**: [*about_us.htm*] The header gets resized wrongly, leading to the loss of most of the content. The association between squares of a same row gets lost as well - the blocks of text and images do not look connected anymore.
 * **Mobile**: [*citations.htm*] The header image gets resized wrongly (it's supposed to be taller), and the title is too big. Also, not enough left-right padding throughout, and it is hard to tell one citation from another.
+* **Mobile**: [*under_construction.htm*] This page is not responsive at all, unfortunately.
